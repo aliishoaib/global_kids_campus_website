@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Page title -->
+   <title>Daycare Department - Global Kids Campus</title>
+   <!-- Bootstrap Core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <!-- Icon fonts -->
+   <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="fonts/flaticons/flaticon.css" rel="stylesheet" type="text/css">
+   <!-- Google fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,800%7CAlegreya+Sans:700,900' rel='stylesheet'
+      type='text/css'>
+   <!-- Theme CSS -->
+   <link href="css/style.css" rel="stylesheet">
+   <!-- Color Style CSS -->
+   <link href="styles/maincolors.css" rel="stylesheet">
+   <!-- Plugins -->
+   <link rel="stylesheet" href="css/plugins.css">
+   <!-- Favicons-->
+   
+   
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-gkc.png">
+   <link rel="shortcut icon" href="img/favicon-gkc.png" type="image/x-icon">
+   <style>
+      .focus-section-heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 1.9rem;
+         color: #222;
+      }
+
+      .focus-squiggle {
+         width: 60px;
+         height: 4px;
+         border-radius: 4px;
+         margin: 8px auto 32px;
+      }
+
+      .focus-blob {
+         width: 92px;
+         height: 92px;
+         border-radius: 62% 38% 55% 45% / 45% 55% 38% 62%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto 14px;
+         font-size: 2rem;
+         color: #fff;
+         transition: transform 0.3s ease, border-radius 0.5s ease;
+      }
+
+      .focus-blob:hover {
+         transform: scale(1.08);
+         border-radius: 38% 62% 45% 55% / 55% 45% 62% 38%;
+      }
+
+      .focus-card h5 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         margin-bottom: 6px;
+      }
+
+      .focus-card .card-squiggle {
+         width: 36px;
+         height: 3px;
+         border-radius: 3px;
+         margin: 0 auto 10px;
+      }
+
+      .focus-card p {
+         color: #555;
+         font-size: 0.97rem;
+         line-height: 1.65;
+      }
+
+      .module-row {
+         display: flex;
+         align-items: flex-start;
+         gap: 16px;
+         background: #fff;
+         border-radius: 14px;
+         padding: 14px 18px;
+         margin-bottom: 0;
+         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+         border-left: 5px solid #eee;
+      }
+
+      .module-num {
+         min-width: 46px;
+         height: 46px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.25rem;
+         font-weight: 900;
+         color: #fff;
+         font-family: 'Alegreya Sans', serif;
+         flex-shrink: 0;
+      }
+
+      .module-row h6 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         color: #222;
+         margin-bottom: 4px;
+      }
+
+      .module-row p {
+         font-size: 0.97rem;
+         color: #555;
+         margin: 0;
+         line-height: 1.6;
+      }
+
+      .daycare-hero-img {
+         height: 400px;
+         object-fit: cover;
+         border: 4px dotted #ff6565;
+         border-radius: 20px;
+      }
+
+      /* Scale down section headings proportionally */
+      .section-heading {
+         margin-bottom: 60px !important;
+      }
+
+      .section-heading h2 {
+         font-size: 40px !important;
+         padding: 22px 32px !important;
+         line-height: 44px !important;
+      }
+
+      .section-heading h2:before {
+         font-size: 48px !important;
+         top: -0.5em !important;
+      }
+
+
+      @media (max-width: 767px) {
+         .section-heading {
+            margin-bottom: 40px !important;
+         }
+         .section-heading h2 {
+            font-size: 28px !important;
+            padding: 16px 24px !important;
+            line-height: 32px !important;
+         }
+         .section-heading h2:before {
+            font-size: 34px !important;
+            top: -0.5em !important;
+         }
+
+         /* Stack module rows vertically on mobile */
+         .module-row {
+            flex-direction: column;
+            align-items: center !important;
+            text-align: center;
+            gap: 12px;
+            padding: 20px 16px;
+            border-radius: 16px;
+            border-left: none !important;
+            border-top: 5px solid;
+         }
+
+         .module-num {
+            min-width: 42px;
+            height: 42px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+         }
+
+         .module-row h6 {
+            font-size: 1.05rem;
+         }
+
+         .module-row p {
+            font-size: 0.88rem;
+            text-align: left;
+         }
+
+         .focus-section-heading {
+            font-size: 1.4rem;
+         }
+
+         .focus-blob {
+            width: 68px;
+            height: 68px;
+            font-size: 1.5rem;
+         }
+
+         .daycare-hero-img {
+            height: 220px !important;
+         }
+
+      }
+
+      @media (max-width: 480px) {
+         .module-row {
+            gap: 10px;
+            padding: 12px 10px;
+         }
+
+         .module-num {
+            min-width: 36px;
+            height: 36px;
+            font-size: 0.95rem;
+            border-radius: 8px;
+         }
+
+         .module-row h6 {
+            font-size: 0.95rem;
+         }
+
+         .module-row p {
+            font-size: 0.82rem;
+         }
+
+         .focus-section-heading {
+            font-size: 1.2rem;
+         }
+
+         .focus-blob {
+            width: 56px;
+            height: 56px;
+            font-size: 1.2rem;
+         }
+      }
+
+      /* ═══════════════════════════════════════════
+         PHOTO BANNER — kidscholl style
+      ═══════════════════════════════════════════ */
+      .gkc-photo-banner {
+         background-image: url('img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-kids-at-play.jpeg');
+         background-size: cover;
+         background-position: center top;
+         position: relative;
+         padding: 260px 0 100px;
+      }
+
+      .gkc-photo-banner::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.68) 100%);
+      }
+
+      .gkc-photo-banner .container {
+         position: relative;
+         z-index: 1;
+      }
+
+      .gkc-photo-banner__heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2.8rem;
+         color: #fff;
+         line-height: 1.2;
+         margin: 0 0 24px;
+      }
+
+
+
+      .gkc-banner-phone {
+         color: rgba(255,255,255,0.75);
+         font-size: 0.8rem;
+         display: block;
+         margin-bottom: 2px;
+      }
+
+      .gkc-banner-phone-num {
+         color: #fff;
+         font-weight: 700;
+         font-size: 1rem;
+         text-decoration: none;
+      }
+
+      .kc-explore-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         background: #f11a49;
+         color: #fff;
+         font-weight: 700;
+         font-size: 0.9rem;
+         padding: 12px 24px;
+         border-radius: 50px;
+         text-decoration: none;
+         white-space: nowrap;
+         transition: background 0.25s ease, transform 0.2s ease;
+         flex-shrink: 0;
+      }
+
+      .kc-explore-btn:hover {
+         background: #c0143c;
+         color: #fff;
+         transform: translateY(-2px);
+      }
+
+      /* Wave divider inside photo banner */
+      .gkc-photo-banner .banner-wave {
+         position: absolute;
+         bottom: -1px;
+         left: 0;
+         width: 100%;
+         overflow: hidden;
+         line-height: 0;
+         z-index: 2;
+      }
+
+      .gkc-photo-banner .banner-wave svg {
+         display: block;
+         width: 100%;
+         height: 70px;
+      }
+
+      @media (max-width: 767px) {
+         .gkc-photo-banner { padding: 160px 0 80px; }
+         .gkc-photo-banner__heading { font-size: 1.9rem; }
+         .gkc-photo-banner .banner-wave svg { height: 40px; }
+      }
+   </style>
+   <script src="js/navbar.js" defer></script>
+   <script src="js/footer.js" defer></script>
+</head>
+<!-- Page width 'Boxed' of 'Full' -->
+
+<body id="page-top" class="full">
+   <!-- Preloader-->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   
+   
+   
+   <div id="navbar-placeholder"></div>
+   <div class="blog jumbotron" style="background-image: url('img/daycare-hero-pink-clouds.jpg'); background-size: cover; background-position: center center;">
+      <div class="container">
+         <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-light">Daycare Department</h1>
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Daycare Department</li>
+               </ol>
+            </nav>
+            <!-- /breadcrumb -->
+         </div>
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /jumbotron -->
+   <!-- Clouds SVG Divider -->
+   <svg id="deco-clouds2" class="head d-none d-md-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+      height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+   <!-- Parallax objects -->
+   <div class="blog-object1 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <!-- Image -->
+      <img src="img/blogobject1.png" alt="">
+   </div>
+   <div class="blog-object2 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <!-- Image -->
+      <img src="img/blogobject2.png" alt="">
+   </div>
+   <!-- Page Content -->
+   <div id="page" class="container">
+      <div class="row">
+         <!-- Blog Post -->
+         <div class="single-page-collumn col-lg-12">
+            <!-- Content -->
+            <h2><span style="color:#f11a49;">Montessori</span>-Based Daycare</h2>
+            <p class="fw-bold">At Global Kids Campus, our Montessori-based Daycare Department is thoughtfully designed
+               to provide a safe, nurturing, and stimulating environment where children feel secure, valued, and
+               inspired to grow.</p>
+            <p>We blend care with early learning by following authentic Montessori principles that encourage
+               independence, confidence, and a love for exploration.</p>
+            <p>Our daycare is not just a place for supervision — it is a space where meaningful learning happens through
+               structured and play-based activities. Each child is guided according to their individual pace, ensuring
+               emotional comfort alongside cognitive development.</p>
+
+            <!-- Daycare image carousel -->
+            <style>
+               .daycare-carousel-wrap { margin: 24px 0 32px; }
+
+               .daycare-slide-row-3 {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 12px;
+               }
+
+               .daycare-slide-row-2 {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 12px;
+               }
+
+               .daycare-img-cell {
+                  position: relative;
+                  width: 100%;
+                  aspect-ratio: 3 / 4;
+                  border-radius: 14px;
+                  overflow: hidden;
+                  background: #f0f0f0;
+                  box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+               }
+
+               .daycare-img-cell:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0 10px 28px rgba(0,0,0,0.16);
+               }
+
+               .daycare-img-cell img {
+                  position: absolute;
+                  inset: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  transition: transform 0.4s ease;
+               }
+
+               .daycare-img-cell:hover img { transform: scale(1.06); }
+
+               .daycare-carousel-wrap .carousel-control-prev,
+               .daycare-carousel-wrap .carousel-control-next { display: none; }
+
+               .daycare-carousel-wrap .carousel-indicators button {
+                  background-color: #009688;
+                  width: 10px; height: 10px;
+                  border-radius: 50%; border: none; opacity: 0.4;
+               }
+               .daycare-carousel-wrap .carousel-indicators button.active { opacity: 1; }
+            </style>
+
+            <div class="daycare-carousel-wrap">
+               <!-- Desktop: 3 per slide -->
+               <div id="daycareCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-activity-wall.jpeg" alt="GKC Defence Activity Wall"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-building-entrance.jpeg" alt="GKC Defence Building Entrance"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-climbing-wall.jpeg" alt="GKC Defence Climbing Wall"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-indoor-play-area.jpeg" alt="GKC Defence Indoor Play Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-jungle-classroom.jpeg" alt="GKC Defence Jungle Classroom"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-montessori-classroom.jpeg" alt="GKC Defence Montessori Classroom"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-play-room.jpeg" alt="GKC Defence Play Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-reception-area.jpeg" alt="GKC Defence Reception Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-sensory-room.jpeg" alt="GKC Defence Sensory Room"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-sleeping-area.jpeg" alt="GKC Defence Sleeping Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-activity-area.jpeg" alt="GKC Wapda Town Activity Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-classroom.jpeg" alt="GKC Wapda Town Classroom"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-daycare-room.jpeg" alt="GKC Wapda Town Daycare Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-entrance.jpeg" alt="GKC Wapda Town Entrance"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-kids-at-play.jpeg" alt="GKC Wapda Town Kids at Play"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-learning-room.jpeg" alt="GKC Wapda Town Learning Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-montessori-area.jpeg" alt="GKC Wapda Town Montessori Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-nap-pod.jpeg" alt="GKC Wapda Town Nap Pod"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-play-area.jpeg" alt="GKC Wapda Town Play Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-sleeping-area.jpeg" alt="GKC Wapda Town Sleeping Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-activity-wall.jpeg" alt="GKC Defence Activity Wall"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-indicators" style="position:relative; margin-top:12px;">
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="0" class="active"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="1"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="2"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="3"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="4"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="5"></button>
+                     <button type="button" data-bs-target="#daycareCarouselDesktop" data-bs-slide-to="6"></button>
+                  </div>
+               </div>
+
+               <!-- Mobile: 2 per slide -->
+               <div id="daycareCarouselMobile" class="carousel slide d-block d-md-none" data-bs-ride="carousel" data-bs-interval="3000">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-activity-wall.jpeg" alt="GKC Defence Activity Wall"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-building-entrance.jpeg" alt="GKC Defence Building Entrance"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-climbing-wall.jpeg" alt="GKC Defence Climbing Wall"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-indoor-play-area.jpeg" alt="GKC Defence Indoor Play Area"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-jungle-classroom.jpeg" alt="GKC Defence Jungle Classroom"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-montessori-classroom.jpeg" alt="GKC Defence Montessori Classroom"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-play-room.jpeg" alt="GKC Defence Play Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-reception-area.jpeg" alt="GKC Defence Reception Area"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-sensory-room.jpeg" alt="GKC Defence Sensory Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-defence/global-kids-campus-defence-sleeping-area.jpeg" alt="GKC Defence Sleeping Area"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-activity-area.jpeg" alt="GKC Wapda Town Activity Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-classroom.jpeg" alt="GKC Wapda Town Classroom"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-daycare-room.jpeg" alt="GKC Wapda Town Daycare Room"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-entrance.jpeg" alt="GKC Wapda Town Entrance"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-kids-at-play.jpeg" alt="GKC Wapda Town Kids at Play"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-learning-room.jpeg" alt="GKC Wapda Town Learning Room"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-2">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-montessori-area.jpeg" alt="GKC Wapda Town Montessori Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-nap-pod.jpeg" alt="GKC Wapda Town Nap Pod"></div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="daycare-slide-row-3">
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-play-area.jpeg" alt="GKC Wapda Town Play Area"></div>
+                           <div class="daycare-img-cell"><img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-sleeping-area.jpeg" alt="GKC Wapda Town Sleeping Area"></div>
+                           <div class="daycare-img-cell" style="visibility:hidden;"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-indicators" style="position:relative; margin-top:12px;">
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="0" class="active"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="1"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="2"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="3"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="4"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="5"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="6"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="7"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="8"></button>
+                     <button type="button" data-bs-target="#daycareCarouselMobile" data-bs-slide-to="9"></button>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Modules Heading -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-5">
+               <div class="section-heading mb-5">
+                  <h2>Modules</h2>
+               </div>
+            </div>
+
+            <!-- Modules Slider -->
+            <style>
+               /* ── Module Section Wrapper ──────────────────────── */
+               .mod-section-bg {
+                  background: #f8f6f2;
+                  border-radius: 28px;
+                  padding: 44px 32px 48px;
+                  margin-top: 12px;
+                  position: relative;
+                  overflow: hidden;
+               }
+
+               .mod-slider-wrap { overflow: hidden; position: relative; }
+               .mod-track { display: flex; transition: transform 0.45s cubic-bezier(.4,0,.2,1); }
+
+               .mod-card {
+                  flex: 0 0 33.333%;
+                  padding: 0 10px;
+                  box-sizing: border-box;
+               }
+               .mod-card-inner {
+                  background: #fff;
+                  border-radius: 18px;
+                  padding: 36px 22px 30px;
+                  text-align: center;
+                  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+                  height: 100%;
+                  border-top: 5px solid transparent;
+               }
+               .mod-card-inner:hover {
+                  transform: translateY(-7px);
+                  box-shadow: 0 18px 48px rgba(0,0,0,0.13);
+               }
+
+               .mod-blob {
+                  width: 88px; height: 88px;
+                  margin: 0 auto 22px;
+                  display: flex; align-items: center; justify-content: center;
+                  font-size: 2rem; color: #fff;
+                  transition: transform 0.3s ease;
+                  box-shadow: 0 6px 20px rgba(0,0,0,0.16);
+               }
+               .mod-card-inner:hover .mod-blob { transform: scale(1.1) rotate(6deg); }
+
+               .mod-card-inner h6 {
+                  font-family: 'Alegreya Sans', serif !important;
+                  font-weight: 800 !important;
+                  font-size: 1.08rem !important;
+                  color: #1e293b !important;
+                  text-transform: none !important;
+                  letter-spacing: 0 !important;
+                  margin-bottom: 10px;
+                  line-height: 1.35;
+               }
+               .mod-card-inner p {
+                  font-size: 0.9rem; color: #64748b;
+                  line-height: 1.68; margin: 0;
+               }
+
+               /* Nav */
+               .mod-nav {
+                  display: flex; justify-content: center;
+                  align-items: center; gap: 18px; margin-top: 40px;
+               }
+               .mod-nav-btn {
+                  width: 44px; height: 44px; border-radius: 50%;
+                  background: #fff; border: 2px solid #f11a49;
+                  color: #f11a49; display: flex; align-items: center;
+                  justify-content: center; cursor: pointer; font-size: 0.9rem;
+                  transition: all 0.22s ease; flex-shrink: 0;
+                  box-shadow: 0 3px 12px rgba(241,26,73,0.12);
+               }
+               .mod-nav-btn:hover {
+                  background: #f11a49; color: #fff;
+                  box-shadow: 0 6px 20px rgba(241,26,73,0.3);
+                  transform: scale(1.08);
+               }
+               .mod-nav-dots { display: flex; gap: 6px; align-items: center; }
+               .mod-dot {
+                  height: 8px; width: 8px; border-radius: 20px;
+                  background: #dde3ee; border: none; padding: 0; cursor: pointer;
+                  transition: width 0.3s ease, background 0.25s ease;
+               }
+               .mod-dot.active { width: 28px; background: #f11a49; }
+
+               @media (max-width: 991px) { .mod-card { flex: 0 0 50%; } }
+               @media (max-width: 575px) { .mod-card { flex: 0 0 100%; } .mod-section-bg { padding: 32px 16px 40px; } }
+            </style>
+
+            <div class="mod-section-bg">
+
+<div class="mod-slider-wrap">
+                  <div class="mod-track" id="modTrack">
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#ff6b6b;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#ff6b6b,#f11a49); border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;">
+                              <i class="fas fa-child"></i>
+                           </div>
+                           <h6>Exercises of Practical Life</h6>
+                           <p>Children master everyday tasks — pouring, folding, buttoning — building independence, coordination, and a proud "I did it myself!" confidence from day one.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#ba68c8;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#ba68c8,#7b1fa2); border-radius:70% 30% 30% 70% / 70% 70% 30% 30%;">
+                              <i class="fas fa-spa"></i>
+                           </div>
+                           <h6>Sensorial Development</h6>
+                           <p>Using Montessori materials, children explore all five senses — sharpening perception, building concentration, and learning to understand the world around them.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#26c6da;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#4dd0e1,#00796b); border-radius:50% 50% 30% 70% / 60% 40% 60% 40%;">
+                              <i class="fas fa-book-open"></i>
+                           </div>
+                           <h6>Language Development</h6>
+                           <p>English Phonics, Urdu Phonics, and Jolly Phonics lay strong reading and writing roots. Songs, games, and storytelling turn every letter into an adventure.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#64b5f6;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#64b5f6,#1565c0); border-radius:70% 30% 50% 50% / 40% 60% 40% 60%;">
+                              <i class="fas fa-comment-dots"></i>
+                           </div>
+                           <h6>Early Literacy &amp; Communication</h6>
+                           <p>Storytime, show-and-tell, and guided conversations nurture little voices to speak, listen, and connect with warmth and confidence every day.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#ffb74d;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#ffb74d,#e65100); border-radius:40% 60% 60% 40% / 70% 30% 70% 30%;">
+                              <i class="fas fa-palette"></i>
+                           </div>
+                           <h6>Art &amp; Craft</h6>
+                           <p>Finger painting, collage, and clay sessions develop fine motor skills and spark imagination — every child takes home something they made with pride.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#81c784;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#81c784,#2e7d32); border-radius:60% 40% 40% 60% / 30% 70% 30% 70%;">
+                              <i class="fas fa-lightbulb"></i>
+                           </div>
+                           <h6>Cognitive &amp; Conceptual Learning</h6>
+                           <p>Shapes, colours, numbers, and patterns explored hands-on. Children build logical thinking and early problem-solving skills through playful discovery.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#f48fb1;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#f48fb1,#ad1457); border-radius:50% 50% 70% 30% / 50% 50% 30% 70%;">
+                              <i class="fas fa-hand-holding-heart"></i>
+                           </div>
+                           <h6>Social &amp; Emotional Development</h6>
+                           <p>Group play, sharing circles, and team activities teach empathy, turn-taking, and self-regulation — helping every child feel seen, heard, and valued.</p>
+                        </div>
+                     </div>
+
+                     <div class="mod-card">
+                        <div class="mod-card-inner" style="border-top-color:#ffcc02;">
+                           <div class="mod-blob" style="background:linear-gradient(135deg,#ffcc02,#e65100); border-radius:30% 70% 40% 60% / 50% 40% 60% 50%;">
+                              <i class="fas fa-running"></i>
+                           </div>
+                           <h6>Physical Activities</h6>
+                           <p>Structured movement, outdoor play, and gross motor exercises keep children active and strong — burning energy, building bodies, and having endless fun.</p>
+                        </div>
+                     </div>
+
+                  </div><!-- /mod-track -->
+               </div><!-- /mod-slider-wrap -->
+
+               <div class="mod-nav">
+                  <button class="mod-nav-btn" id="modPrev" aria-label="Previous module">
+                     <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <div class="mod-nav-dots" id="modDots"></div>
+                  <button class="mod-nav-btn" id="modNext" aria-label="Next module">
+                     <i class="fas fa-chevron-right"></i>
+                  </button>
+               </div>
+            </div><!-- /mod-section-bg -->
+
+            <script>
+               (function () {
+                  var track   = document.getElementById('modTrack');
+                  var cards   = track.querySelectorAll('.mod-card');
+                  var dotsWrap = document.getElementById('modDots');
+                  var total   = cards.length;
+                  var current = 0;
+
+                  function pv() {
+                     return window.innerWidth >= 992 ? 3 : window.innerWidth >= 576 ? 2 : 1;
+                  }
+
+                  function buildDots() {
+                     dotsWrap.innerHTML = '';
+                     var count = total - pv() + 1;
+                     for (var i = 0; i < count; i++) {
+                        var d = document.createElement('button');
+                        d.className = 'mod-dot' + (i === current ? ' active' : '');
+                        d.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+                        (function(idx){ d.addEventListener('click', function(){ go(idx); }); })(i);
+                        dotsWrap.appendChild(d);
+                     }
+                  }
+
+                  function go(n) {
+                     var max = total - pv();
+                     current = n < 0 ? max : n > max ? 0 : n;
+                     track.style.transform = 'translateX(-' + (current * cards[0].offsetWidth) + 'px)';
+                     dotsWrap.querySelectorAll('.mod-dot').forEach(function(d, i){
+                        d.classList.toggle('active', i === current);
+                     });
+                  }
+
+                  document.getElementById('modNext').addEventListener('click', function () { go(current + 1); });
+                  document.getElementById('modPrev').addEventListener('click', function () { go(current - 1); });
+                  window.addEventListener('resize', function () { buildDots(); go(current); });
+
+                  buildDots();
+               })();
+            </script>
+         </div>
+         <!-- /single-page-collumn -->
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /modules container -->
+
+   <!-- ══════════════════════════════════════════════════════════════
+        PHOTO BANNER (kidscholl style)
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="gkc-photo-banner">
+      <div class="container">
+         <div class="d-flex align-items-end justify-content-between flex-wrap gap-4">
+
+            <!-- Left: heading + buttons -->
+            <div>
+               <h2 class="gkc-photo-banner__heading">
+                  Childhood is not a race —<br>it is a journey.
+               </h2>
+               <div class="d-flex align-items-center gap-4 flex-wrap">
+                  <a href="index.html#contact" class="kc-explore-btn">
+                     Enrol Today <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="d-flex align-items-center gap-2">
+                     <i class="fa fa-phone-alt" style="color:#fff; font-size:1.1rem;" aria-hidden="true"></i>
+                     <div>
+                        <span class="gkc-banner-phone">Call Us</span>
+                        <a href="tel:+923001234567" class="gkc-banner-phone-num">+92 300 000 0000</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Wave divider at bottom of banner -->
+      <div class="banner-wave" aria-hidden="true">
+         <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1380,30 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/>
+         </svg>
+      </div>
+   </section>
+
+   <div class="container">
+      <div class="row">
+         <div class="single-page-collumn col-lg-12">
+
+            <!-- Our Focus Section -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-4">
+               <div class="section-heading mb-5">
+                  <h2>Our Focus</h2>
+               </div>
+            </div>
+            <div class="row text-center g-3">
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#f11a49;"><i class="fa fa-chalkboard-teacher"></i></div>
+                  <h5 style="color:#f11a49;">Professional Instructors</h5>
+                  <div class="card-squiggle" style="background:#f11a49;"></div>
+                  <p>Our qualified educators are trained in Montessori methodology and child psychology — ensuring every
+                     child receives expert, attentive guidance each day.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#009688;"><i class="fa fa-shield-alt"></i></div>
+                  <h5 style="color:#009688;">Safe &amp; Secure Environment</h5>
+                  <div class="card-squiggle" style="background:#009688;"></div>
+                  <p>Child safety is our top priority. Our premises are fully secured with CCTV, trained staff, and
+                     child-proofed spaces so parents can have complete peace of mind.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#ff8c00;"><i class="fa fa-graduation-cap"></i></div>
+                  <h5 style="color:#ff8c00;">Montessori Curriculum</h5>
+                  <div class="card-squiggle" style="background:#ff8c00;"></div>
+                  <p>We follow an authentic Montessori framework that nurtures independence, critical thinking, and a
+                     lifelong love of learning through purposeful, structured activities.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#9c27b0;"><i class="fa fa-heart"></i></div>
+                  <h5 style="color:#9c27b0;">Holistic Development</h5>
+                  <div class="card-squiggle" style="background:#9c27b0;"></div>
+                  <p>We nurture every dimension of a child — cognitive, emotional, social, and physical — so they grow
+                     into confident, well-rounded individuals ready for the world.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#4caf50;"><i class="fa fa-child"></i></div>
+                  <h5 style="color:#4caf50;">Child-Centred Learning</h5>
+                  <div class="card-squiggle" style="background:#4caf50;"></div>
+                  <p>Every child learns at their own pace. Our approach respects individual differences and tailors
+                     activities to match each child's unique strengths and interests.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#2196f3;"><i class="fa fa-hands-helping"></i></div>
+                  <h5 style="color:#2196f3;">Parent Partnership</h5>
+                  <div class="card-squiggle" style="background:#2196f3;"></div>
+                  <p>We keep families closely involved through regular updates, progress reports, and open communication
+                     — because a strong home-school connection makes all the difference.</p>
+               </div>
+            </div>
+
+            <div class="row mt-5">
+               <div class="color_block">
+                  <h4>A Home Away from Home</h4>
+                  <p>Our trained staff ensures that each child is engaged, cared for, and supported throughout the day
+                     in a structured yet flexible routine. At Global Kids Campus, we aim to create a "home away from
+                     home" where children feel happy, secure, and eager to learn.</p>
+                  <a class="btn" href="index.html#contact">Contact us</a>
+               </div>
+            </div>
+         </div>
+         <!-- /single-page-collumn -->
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /page -->
+
+   <!-- Footer -->
+   <div id="footer-divider" class="container-fluid cloud-divider white">
+      <!-- Clouds SVG Divider -->
+      <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+         viewBox="0 0 100 100" preserveAspectRatio="none">
+         <path d="M-5 100 Q 0 20 5 100 Z
+               M0 100 Q 5 0 10 100
+               M5 100 Q 10 30 15 100
+               M10 100 Q 15 10 20 100
+               M15 100 Q 20 30 25 100
+               M20 100 Q 25 -10 30 100
+               M25 100 Q 30 10 35 100
+               M30 100 Q 35 30 40 100
+               M35 100 Q 40 10 45 100
+               M40 100 Q 45 50 50 100
+               M45 100 Q 50 20 55 100
+               M50 100 Q 55 40 60 100
+               M55 100 Q 60 60 65 100
+               M60 100 Q 65 50 70 100
+               M65 100 Q 70 20 75 100
+               M70 100 Q 75 45 80 100
+               M75 100 Q 80 30 85 100
+               M80 100 Q 85 20 90 100
+               M85 100 Q 90 50 95 100
+               M90 100 Q 95 25 100 100
+               M95 100 Q 100 15 105 100 Z">
+         </path>
+      </svg>
+   </div>
+   <div id="footer-placeholder"></div>
+   <!-- Core JavaScript Files -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Main Js -->
+   <script src="js/main.js"></script>
+   <!--Other Plugins -->
+   <script src="js/plugins.js"></script>
+</body>
+
+</html>

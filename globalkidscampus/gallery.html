@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <![endif]-->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Page title -->
+   <title>Gallery - Global Kids Campus</title>
+   <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+      <![endif]-->
+   <!-- Bootstrap Core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <!-- Icon fonts -->
+   <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="fonts/flaticons/flaticon.css" rel="stylesheet" type="text/css">
+   <!-- Google fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,800%7CAlegreya+Sans:700,900' rel='stylesheet'
+      type='text/css'>
+   <!-- Theme CSS -->
+   <link href="css/style.css" rel="stylesheet">
+   <!-- Color Style CSS -->
+   <link href="styles/maincolors.css" rel="stylesheet">
+   <!-- Plugins -->
+   <link rel="stylesheet" href="css/plugins.css">
+   <!-- Favicons-->
+   <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <style>
+      .focus-section-heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 1.9rem;
+         color: #222;
+      }
+
+      .focus-squiggle {
+         width: 60px;
+         height: 4px;
+         border-radius: 4px;
+         margin: 8px auto 32px;
+      }
+
+      .focus-blob {
+         width: 92px;
+         height: 92px;
+         border-radius: 62% 38% 55% 45% / 45% 55% 38% 62%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto 14px;
+         font-size: 2rem;
+         color: #fff;
+         transition: transform 0.3s ease, border-radius 0.5s ease;
+      }
+
+      .focus-blob:hover {
+         transform: scale(1.08);
+         border-radius: 38% 62% 45% 55% / 55% 45% 62% 38%;
+      }
+
+      .focus-card h5 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         margin-bottom: 6px;
+      }
+
+      .focus-card .card-squiggle {
+         width: 36px;
+         height: 3px;
+         border-radius: 3px;
+         margin: 0 auto 10px;
+      }
+
+      .focus-card p {
+         color: #555;
+         font-size: 0.97rem;
+         line-height: 1.65;
+      }
+
+      .module-row {
+         display: flex;
+         align-items: flex-start;
+         gap: 16px;
+         background: #fff;
+         border-radius: 14px;
+         padding: 14px 18px;
+         margin-bottom: 0;
+         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+         border-left: 5px solid #eee;
+      }
+
+      .module-num {
+         min-width: 46px;
+         height: 46px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.25rem;
+         font-weight: 900;
+         color: #fff;
+         font-family: 'Alegreya Sans', serif;
+         flex-shrink: 0;
+      }
+
+      .module-row h6 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         color: #222;
+         margin-bottom: 4px;
+      }
+
+      .module-row p {
+         font-size: 0.97rem;
+         color: #555;
+         margin: 0;
+         line-height: 1.6;
+      }
+
+      .daycare-hero-img {
+         height: 400px;
+         object-fit: cover;
+         border: 4px dotted #ff6565;
+         border-radius: 20px;
+      }
+
+      /* Scale down section headings proportionally */
+      .section-heading {
+         margin-bottom: 60px !important;
+      }
+
+      .section-heading h2 {
+         font-size: 40px !important;
+         padding: 22px 32px !important;
+         line-height: 44px !important;
+      }
+
+      .section-heading h2:before {
+         font-size: 48px !important;
+         top: -0.5em !important;
+      }
+
+
+      @media (max-width: 767px) {
+         .section-heading {
+            margin-bottom: 40px !important;
+         }
+         .section-heading h2 {
+            font-size: 28px !important;
+            padding: 16px 24px !important;
+            line-height: 32px !important;
+         }
+         .section-heading h2:before {
+            font-size: 34px !important;
+            top: -0.5em !important;
+         }
+
+         .module-row {
+            gap: 12px;
+            padding: 14px 12px;
+            border-radius: 14px;
+         }
+
+         .module-num {
+            min-width: 42px;
+            height: 42px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+         }
+
+         .module-row h6 {
+            font-size: 1.05rem;
+         }
+
+         .module-row p {
+            font-size: 0.88rem;
+         }
+
+         .focus-section-heading {
+            font-size: 1.4rem;
+         }
+
+         .focus-blob {
+            width: 68px;
+            height: 68px;
+            font-size: 1.5rem;
+         }
+
+         .daycare-hero-img {
+            height: 220px !important;
+         }
+
+      }
+
+      @media (max-width: 480px) {
+         .module-row {
+            gap: 10px;
+            padding: 12px 10px;
+         }
+
+         .module-num {
+            min-width: 36px;
+            height: 36px;
+            font-size: 0.95rem;
+            border-radius: 8px;
+         }
+
+         .module-row h6 {
+            font-size: 0.95rem;
+         }
+
+         .module-row p {
+            font-size: 0.82rem;
+         }
+
+         .focus-section-heading {
+            font-size: 1.2rem;
+         }
+
+         .focus-blob {
+            width: 56px;
+            height: 56px;
+            font-size: 1.2rem;
+         }
+      }
+   </style>
+   <script src="js/navbar.js" defer></script>
+</head>
+<!-- Page width 'Boxed' of 'Full' -->
+
+<body id="page-top" class="full">
+   <!-- Preloader-->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   
+   
+   
+   <div id="navbar-placeholder"></div>
+   <div class="blog jumbotron">
+      <div class="container">
+         <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-light">Daycare Department</h1>
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Daycare Department</li>
+               </ol>
+            </nav>
+            <!-- /breadcrumb -->
+         </div>
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /jumbotron -->
+   <!-- Clouds SVG Divider -->
+   <svg id="deco-clouds2" class="head d-none d-md-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+      height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+   <!-- Parallax objects -->
+   <div class="blog-object1 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <!-- Image -->
+      <img src="img/blogobject1.png" alt="">
+   </div>
+   <div class="blog-object2 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <!-- Image -->
+      <img src="img/blogobject2.png" alt="">
+   </div>
+   <!-- Page Content -->
+   <div id="page" class="container">
+      <div class="row">
+         <!-- Blog Post -->
+         <div class="single-page-collumn col-lg-12">
+            <!-- Content -->
+            <h2><span style="color:#f11a49;">Montessori</span>-Based Daycare</h2>
+            <p class="fw-bold">At Global Kids Campus, our Montessori-based Daycare Department is thoughtfully designed
+               to provide a safe, nurturing, and stimulating environment where children feel secure, valued, and
+               inspired to grow.</p>
+            <p>We blend care with early learning by following authentic Montessori principles that encourage
+               independence, confidence, and a love for exploration.</p>
+            <p>Our daycare is not just a place for supervision — it is a space where meaningful learning happens through
+               structured and play-based activities. Each child is guided according to their individual pace, ensuring
+               emotional comfort alongside cognitive development.</p>
+
+            <div class="mt-4 mb-4 row g-3">
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-17.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-1.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-8.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-10.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-14.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+               <div class="col-6 col-md-4">
+                  <img src="img/gkc-18.jpeg" alt="Daycare" class="img-fluid w-100 rounded-3"
+                     style="height:220px;object-fit:cover;">
+               </div>
+            </div>
+
+            <!-- Modules Heading -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-5">
+               <div class="section-heading mb-5">
+                  <h2>Modules</h2>
+               </div>
+            </div>
+
+            <!-- Modules Grid -->
+            <div class="row g-3">
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#f11a49;">
+                     <div class="module-num" style="background:#f11a49;">1</div>
+                     <div>
+                        <h6>Exercises of Practical Life (EPL)</h6>
+                        <p>Children learn everyday tasks like pouring, folding, buttoning, and cleaning. These
+                           activities
+                           build independence, hand-eye coordination, and a proud "I did it myself!" attitude from the
+                           very
+                           beginning.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#9c27b0;">
+                     <div class="module-num" style="background:#9c27b0;">2</div>
+                     <div>
+                        <h6>Sensorial Development</h6>
+                        <p>Using specially crafted Montessori materials, children explore touch, sound, sight, smell,
+                           and
+                           taste. These activities sharpen perception, develop concentration, and help children make
+                           sense
+                           of the world around them.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#009688;">
+                     <div class="module-num" style="background:#009688;">3</div>
+                     <div>
+                        <h6>Language Development</h6>
+                        <p>Through English Phonics, Urdu Phonics, and Jolly Phonics, children build strong reading and
+                           writing foundations. Songs, games, and storytelling make every letter an adventure.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#2196f3;">
+                     <div class="module-num" style="background:#2196f3;">4</div>
+                     <div>
+                        <h6>Early Literacy &amp; Communication</h6>
+                        <p>Storytime, show-and-tell, and guided conversations help children express their thoughts and
+                           feelings confidently. We nurture little voices to speak, listen, and connect with warmth.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#ff8c00;">
+                     <div class="module-num" style="background:#ff8c00;">5</div>
+                     <div>
+                        <h6>Art &amp; Craft</h6>
+                        <p>From finger painting to collage and clay, creative sessions develop fine motor skills and
+                           unleash imagination. Every child gets to make something they're proud of — and take it home
+                           with
+                           a big smile!</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#4caf50;">
+                     <div class="module-num" style="background:#4caf50;">6</div>
+                     <div>
+                        <h6>Cognitive &amp; Conceptual Learning</h6>
+                        <p>Shapes, colors, numbers, and patterns are explored hands-on with real materials. Children
+                           develop logical thinking, focus, and early problem-solving skills in a playful, discovery-led
+                           way.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#e91e8c;">
+                     <div class="module-num" style="background:#e91e8c;">7</div>
+                     <div>
+                        <h6>Social &amp; Emotional Development</h6>
+                        <p>Group play, sharing circles, and team activities teach children empathy, turn-taking, and
+                           emotional regulation. We help every child feel seen, heard, and confident in who they are.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="module-row h-100" style="border-left-color:#ff6f00;">
+                     <div class="module-num" style="background:#ff6f00;">8</div>
+                     <div>
+                        <h6>Physical Activities</h6>
+                        <p>Structured movement, outdoor play, and gross motor exercises keep children active and
+                           healthy.
+                           Running, jumping, and stretching build strong bodies and help little ones burn off that
+                           beautiful boundless energy!</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Our Focus Section -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-4">
+               <div class="section-heading mb-5">
+                  <h2>Our Focus</h2>
+               </div>
+            </div>
+            <div class="row text-center">
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#f11a49;"><i class="fa fa-chalkboard-teacher"></i></div>
+                  <h5 style="color:#f11a49;">Professional Instructors</h5>
+                  <div class="card-squiggle" style="background:#f11a49;"></div>
+                  <p>Our qualified educators are trained in Montessori methodology and child psychology — ensuring every
+                     child receives expert, attentive guidance each day.</p>
+               </div>
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#009688;"><i class="fa fa-shield-alt"></i></div>
+                  <h5 style="color:#009688;">Safe &amp; Secure Environment</h5>
+                  <div class="card-squiggle" style="background:#009688;"></div>
+                  <p>Child safety is our top priority. Our premises are fully secured with CCTV, trained staff, and
+                     child-proofed spaces so parents can have complete peace of mind.</p>
+               </div>
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#ff8c00;"><i class="fa fa-graduation-cap"></i></div>
+                  <h5 style="color:#ff8c00;">Montessori Curriculum</h5>
+                  <div class="card-squiggle" style="background:#ff8c00;"></div>
+                  <p>We follow an authentic Montessori framework that nurtures independence, critical thinking, and a
+                     lifelong love of learning through purposeful, structured activities.</p>
+               </div>
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#9c27b0;"><i class="fa fa-heart"></i></div>
+                  <h5 style="color:#9c27b0;">Holistic Development</h5>
+                  <div class="card-squiggle" style="background:#9c27b0;"></div>
+                  <p>We nurture every dimension of a child — cognitive, emotional, social, and physical — so they grow
+                     into confident, well-rounded individuals ready for the world.</p>
+               </div>
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#4caf50;"><i class="fa fa-child"></i></div>
+                  <h5 style="color:#4caf50;">Child-Centred Learning</h5>
+                  <div class="card-squiggle" style="background:#4caf50;"></div>
+                  <p>Every child learns at their own pace. Our approach respects individual differences and tailors
+                     activities to match each child's unique strengths and interests.</p>
+               </div>
+               <div class="col-md-4 col-6 mb-4 focus-card">
+                  <div class="focus-blob" style="background:#2196f3;"><i class="fa fa-hands-helping"></i></div>
+                  <h5 style="color:#2196f3;">Parent Partnership</h5>
+                  <div class="card-squiggle" style="background:#2196f3;"></div>
+                  <p>We keep families closely involved through regular updates, progress reports, and open communication
+                     — because a strong home-school connection makes all the difference.</p>
+               </div>
+            </div>
+
+            <div class="row mt-5">
+               <div class="color_block">
+                  <h4>A Home Away from Home</h4>
+                  <p>Our trained staff ensures that each child is engaged, cared for, and supported throughout the day
+                     in a structured yet flexible routine. At Global Kids Campus, we aim to create a "home away from
+                     home" where children feel happy, secure, and eager to learn.</p>
+                  <a class="btn" href="index.html#contact">Contact us</a>
+               </div>
+            </div>
+         </div>
+         <!-- /single-page-collumn -->
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /page -->
+   <!-- Footer -->
+   <div id="footer-divider" class="container-fluid cloud-divider white">
+      <!-- Clouds SVG Divider -->
+      <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+         viewBox="0 0 100 100" preserveAspectRatio="none">
+         <path d="M-5 100 Q 0 20 5 100 Z
+               M0 100 Q 5 0 10 100
+               M5 100 Q 10 30 15 100
+               M10 100 Q 15 10 20 100
+               M15 100 Q 20 30 25 100
+               M20 100 Q 25 -10 30 100
+               M25 100 Q 30 10 35 100
+               M30 100 Q 35 30 40 100
+               M35 100 Q 40 10 45 100
+               M40 100 Q 45 50 50 100
+               M45 100 Q 50 20 55 100
+               M50 100 Q 55 40 60 100
+               M55 100 Q 60 60 65 100
+               M60 100 Q 65 50 70 100
+               M65 100 Q 70 20 75 100
+               M70 100 Q 75 45 80 100
+               M75 100 Q 80 30 85 100
+               M80 100 Q 85 20 90 100
+               M85 100 Q 90 50 95 100
+               M90 100 Q 95 25 100 100
+               M95 100 Q 100 15 105 100 Z">
+         </path>
+      </svg>
+   </div>
+   <footer>
+      <div class="container">
+         <div class="row">
+            <!-- Newsletter -->
+            <div class="col-lg-3 text-center res-margin my-auto">
+               <p class="text-light fw-bold">Sign our Newsletter</p>
+               <!-- Begin Mailchimp Signup Form -->
+               <div id="mc_embed_signup">
+                  <!-- change your mailchimp URL below -->
+                  <form action="//yourlist.us12.list-manage.com/subscribe/post?u=04e646927a196552aaee78a7b&amp;id=111"
+                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                     target="_blank" novalidate>
+                     <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                           <input type="email" value="" name="EMAIL" placeholder="Email address"
+                              class="form-control required email" id="mce-EMAIL">
+                        </div>
+                        <div id="mce-responses" class="clear foot">
+                           <div class="response mt-2" id="mce-error-response"></div>
+                           <div class="response alert alert-success mt-2" id="mce-success-response"></div>
+                        </div>
+                        <div class="optionalParent">
+                           <div class="clear foot">
+                              <input type="submit" class="btn btn-primary" value="Subscribe" name="subscribe"
+                                 id="mc-embedded-subscribe">
+                           </div>
+                        </div>
+                     </div>
+                  </form>
+               </div>
+               <!--End mc_embed_signup-->
+            </div>
+            <!-- /col-lg -->
+            <!-- Bottom Credits -->
+            <div class="col-lg-6 res-margin my-auto">
+               <a href="index.html"><img src="img/gkc-logo.png" alt="" class="d-block mx-auto"></a>
+               <!-- social-icons -->
+               <div class="social-media text-center mt-3">
+                  <a href="#" title=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#" title=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#" title=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#" title=""><i class="fa-brands fa-pinterest"></i></a>
+                  <a href="#" title=""><i class="fa-brands fa-instagram"></i></a>
+               </div>
+            </div>
+            <!-- /col-lg- -->
+            <!-- Opening Hours -->
+            <div class="col-lg-3 my-auto text-center">
+               <!-- Sign-->
+               <p class="text-light fw-bold">Opening Hours:</p>
+               <!-- Table-->
+               <table class="table">
+                  <tbody>
+                     <tr class="text-light">
+                        <td>Monday to Friday</td>
+                        <td>7 a.m. to 7 p.m.</td>
+                     </tr>
+                     <tr class="text-light">
+                        <td>Weekends / Holidays</td>
+                        <td><span class="badge bg-danger m-0">Closed</span></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <!-- /col-lg- -->
+         </div>
+         <!-- / row -->
+      </div>
+      <!-- / container -->
+      <hr>
+      <p class="credits">Designed by <a href="http://www.ingridkuhn.com">IngridK</a></p>
+      <!-- Go To Top Link -->
+      <div class="page-scroll d-none d-lg-block">
+         <a href="#page-top" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+      </div>
+   </footer>
+   <!-- /footer ends -->
+   <!-- Core JavaScript Files -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Main Js -->
+   <script src="js/main.js"></script>
+   <!--Other Plugins -->
+   <script src="js/plugins.js"></script>
+</body>
+
+</html>

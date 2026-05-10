@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description"
+      content="Global Kids Campus Therapy Centre offers speech therapy, ABA therapy, educational therapy, and support for learning disabilities for children in Lahore.">
+   <meta name="author" content="Global Kids Campus">
+   <!-- Page title -->
+   <title>Therapy Centre - Global Kids Campus</title>
+   <!-- Bootstrap Core CSS -->
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <!-- Icon fonts -->
+   <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="fonts/flaticons/flaticon.css" rel="stylesheet" type="text/css">
+   <!-- Google fonts -->
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,800%7CAlegreya+Sans:700,900' rel='stylesheet'
+      type='text/css'>
+   <!-- Theme CSS -->
+   <link href="css/style.css" rel="stylesheet">
+   <!-- Color Style CSS -->
+   <link href="styles/maincolors.css" rel="stylesheet">
+   <!-- Plugins -->
+   <link rel="stylesheet" href="css/plugins.css">
+   <!-- Favicons-->
+   
+   
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-gkc.png">
+   <link rel="shortcut icon" href="img/favicon-gkc.png" type="image/x-icon">
+   <style>
+      .focus-section-heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 1.9rem;
+         color: #222;
+      }
+
+      .focus-squiggle {
+         width: 60px;
+         height: 4px;
+         border-radius: 4px;
+         margin: 8px auto 32px;
+      }
+
+      .focus-blob {
+         width: 92px;
+         height: 92px;
+         border-radius: 62% 38% 55% 45% / 45% 55% 38% 62%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         margin: 0 auto 14px;
+         font-size: 2rem;
+         color: #fff;
+         transition: transform 0.3s ease, border-radius 0.5s ease;
+      }
+
+      .focus-blob:hover {
+         transform: scale(1.08);
+         border-radius: 38% 62% 45% 55% / 55% 45% 62% 38%;
+      }
+
+      .focus-card h5 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         margin-bottom: 6px;
+      }
+
+      .focus-card .card-squiggle {
+         width: 36px;
+         height: 3px;
+         border-radius: 3px;
+         margin: 0 auto 10px;
+      }
+
+      .focus-card p {
+         color: #555;
+         font-size: 0.97rem;
+         line-height: 1.65;
+      }
+
+      .module-row {
+         display: flex;
+         align-items: flex-start;
+         gap: 16px;
+         background: #fff;
+         border-radius: 14px;
+         padding: 14px 18px;
+         margin-bottom: 0;
+         box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+         border-left: 5px solid #eee;
+      }
+
+      .module-num {
+         min-width: 46px;
+         height: 46px;
+         border-radius: 10px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.25rem;
+         font-weight: 900;
+         color: #fff;
+         font-family: 'Alegreya Sans', serif;
+         flex-shrink: 0;
+      }
+
+      .module-row h6 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 800;
+         font-size: 1.15rem;
+         color: #222;
+         margin-bottom: 4px;
+      }
+
+      .module-row p {
+         font-size: 0.97rem;
+         color: #555;
+         margin: 0;
+         line-height: 1.6;
+      }
+
+      .daycare-hero-img {
+         height: 400px;
+         object-fit: cover;
+         border: 4px dotted #ff6565;
+         border-radius: 20px;
+      }
+
+      /* Scale down section headings proportionally */
+      .section-heading {
+         margin-bottom: 60px !important;
+      }
+
+      .section-heading h2 {
+         font-size: 40px !important;
+         padding: 22px 32px !important;
+         line-height: 44px !important;
+      }
+
+      .section-heading h2:before {
+         font-size: 48px !important;
+         top: -0.5em !important;
+      }
+
+      @media (max-width: 767px) {
+         .section-heading {
+            margin-bottom: 40px !important;
+         }
+
+         .section-heading h2 {
+            font-size: 28px !important;
+            padding: 16px 24px !important;
+            line-height: 32px !important;
+         }
+
+         .section-heading h2:before {
+            font-size: 34px !important;
+            top: -0.5em !important;
+         }
+
+         /* Stack service rows vertically on mobile */
+         .module-row {
+            flex-direction: column;
+            align-items: center !important;
+            text-align: center;
+            gap: 12px;
+            padding: 20px 16px;
+            border-radius: 16px;
+            border-left: none !important;
+            border-top: 5px solid;
+         }
+
+         .module-num {
+            min-width: 42px;
+            height: 42px;
+            font-size: 1.1rem;
+            border-radius: 10px;
+         }
+
+         /* Shrink the circular service images on mobile */
+         .module-row img.rounded-circle {
+            width: 110px !important;
+            height: 110px !important;
+         }
+
+         .module-row h6 {
+            font-size: 1.05rem;
+         }
+
+         .module-row p {
+            font-size: 0.88rem;
+            text-align: left;
+         }
+
+         .focus-section-heading {
+            font-size: 1.4rem;
+         }
+
+         .focus-blob {
+            width: 68px;
+            height: 68px;
+            font-size: 1.5rem;
+         }
+
+         .daycare-hero-img {
+            height: 220px !important;
+         }
+      }
+
+      @media (max-width: 480px) {
+         .module-row {
+            gap: 10px;
+            padding: 12px 10px;
+         }
+
+         .module-num {
+            min-width: 36px;
+            height: 36px;
+            font-size: 0.95rem;
+            border-radius: 8px;
+         }
+
+         .module-row h6 {
+            font-size: 0.95rem;
+         }
+
+         .module-row p {
+            font-size: 0.82rem;
+         }
+
+         .focus-section-heading {
+            font-size: 1.2rem;
+         }
+
+         .focus-blob {
+            width: 56px;
+            height: 56px;
+            font-size: 1.2rem;
+         }
+      }
+
+      /* ═══════════════════════════════════════════
+         PHOTO BANNER — kidscholl style
+      ═══════════════════════════════════════════ */
+      .gkc-photo-banner {
+         background-image: url('img/therapy/gkc-therapy-balance-board.jpeg');
+         background-size: cover;
+         background-position: center top;
+         position: relative;
+         padding: 260px 0 100px;
+      }
+
+      .gkc-photo-banner::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.68) 100%);
+      }
+
+      .gkc-photo-banner .container {
+         position: relative;
+         z-index: 1;
+      }
+
+      .gkc-photo-banner__heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2.8rem;
+         color: #fff;
+         line-height: 1.2;
+         margin: 0 0 24px;
+      }
+
+
+
+      .gkc-banner-phone {
+         color: rgba(255,255,255,0.75);
+         font-size: 0.8rem;
+         display: block;
+         margin-bottom: 2px;
+      }
+
+      .gkc-banner-phone-num {
+         color: #fff;
+         font-weight: 700;
+         font-size: 1rem;
+         text-decoration: none;
+      }
+
+      .kc-explore-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         background: #f11a49;
+         color: #fff;
+         font-weight: 700;
+         font-size: 0.9rem;
+         padding: 12px 24px;
+         border-radius: 50px;
+         text-decoration: none;
+         white-space: nowrap;
+         transition: background 0.25s ease, transform 0.2s ease;
+         flex-shrink: 0;
+      }
+
+      .kc-explore-btn:hover {
+         background: #c0143c;
+         color: #fff;
+         transform: translateY(-2px);
+      }
+
+      /* Wave divider inside photo banner */
+      .gkc-photo-banner .banner-wave {
+         position: absolute;
+         bottom: -1px;
+         left: 0;
+         width: 100%;
+         overflow: hidden;
+         line-height: 0;
+         z-index: 2;
+      }
+
+      .gkc-photo-banner .banner-wave svg {
+         display: block;
+         width: 100%;
+         height: 70px;
+      }
+
+      @media (max-width: 767px) {
+         .gkc-photo-banner { padding: 160px 0 80px; }
+         .gkc-photo-banner__heading { font-size: 1.9rem; }
+         .gkc-photo-banner .banner-wave svg { height: 40px; }
+      }
+   </style>
+   <script src="js/navbar.js" defer></script>
+   <script src="js/footer.js" defer></script>
+</head>
+<!-- Page width 'Boxed' of 'Full' -->
+
+<body id="page-top" class="full">
+   <!-- Preloader-->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+
+
+
+   <div id="navbar-placeholder"></div>
+   <div class="blog jumbotron" style="background-image: url('img/daycare-hero-pink-clouds.jpg'); background-size: cover; background-position: center center;">
+      <div class="container">
+         <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-light">Therapy Centre</h1>
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Therapy Centre</li>
+               </ol>
+            </nav>
+            <!-- /breadcrumb -->
+         </div>
+      </div>
+      <!-- /.container -->
+   </div>
+   <!-- /jumbotron -->
+   <!-- Clouds SVG Divider -->
+   <svg id="deco-clouds2" class="head d-none d-md-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+      height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+            M0 100 Q 5 0 10 100
+            M5 100 Q 10 30 15 100
+            M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100
+            M20 100 Q 25 -10 30 100
+            M25 100 Q 30 10 35 100
+            M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100
+            M40 100 Q 45 50 50 100
+            M45 100 Q 50 20 55 100
+            M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100
+            M60 100 Q 65 50 70 100
+            M65 100 Q 70 20 75 100
+            M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100
+            M80 100 Q 85 20 90 100
+            M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100
+            M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+   <!-- Parallax objects -->
+   <div class="blog-object1 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <img src="img/blogobject1.png" alt="">
+   </div>
+   <div class="blog-object2 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <img src="img/blogobject2.png" alt="">
+   </div>
+   <!-- Page Content -->
+   <div id="page" class="container">
+      <div class="row">
+         <!-- Blog Post -->
+         <div class="single-page-collumn col-lg-12">
+            <!-- Content -->
+            <h2><span style="color:#f11a49;">Specialist</span> Therapy Centre</h2>
+            <p class="fw-bold">At Global Kids Campus, our Therapy Centre is a specialised department designed to support
+               children with developmental, speech, and learning challenges in a structured, compassionate, and highly
+               professional environment.</p>
+            <p>We integrate Montessori principles with evidence-based therapeutic practices to create a space where
+               children feel comfortable, understood, and motivated to progress. Every programme is carefully planned to
+               meet each child's individual needs.</p>
+            <p>Our certified therapists work closely with families to ensure consistency between sessions and home life
+               — because true progress happens when children feel supported everywhere they go.</p>
+
+            <!-- Therapy image carousel -->
+            <style>
+               .therapy-carousel-wrap {
+                  margin: 24px 0 32px;
+               }
+
+               .therapy-slide-row-3 {
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 12px;
+               }
+
+               .therapy-slide-row-2 {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 12px;
+               }
+
+               .therapy-img-cell {
+                  position: relative;
+                  width: 100%;
+                  aspect-ratio: 3 / 4;
+                  border-radius: 14px;
+                  overflow: hidden;
+                  background: #f0f0f0;
+                  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.10);
+                  transition: transform 0.3s ease, box-shadow 0.3s ease;
+               }
+
+               .therapy-img-cell:hover {
+                  transform: translateY(-5px);
+                  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+               }
+
+               .therapy-img-cell img {
+                  position: absolute;
+                  inset: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  object-position: top;
+                  transition: transform 0.4s ease;
+               }
+
+               .therapy-img-cell:hover img {
+                  transform: scale(1.06);
+               }
+
+               .therapy-carousel-wrap .carousel-control-prev,
+               .therapy-carousel-wrap .carousel-control-next {
+                  display: none;
+               }
+
+               .therapy-carousel-wrap .carousel-indicators button {
+                  background-color: #f11a49;
+                  width: 10px;
+                  height: 10px;
+                  border-radius: 50%;
+                  border: none;
+                  opacity: 0.4;
+               }
+
+               .therapy-carousel-wrap .carousel-indicators button.active {
+                  opacity: 1;
+               }
+            </style>
+
+            <div class="therapy-carousel-wrap">
+               <!-- ── Desktop: 3 per slide ── -->
+               <div id="therapyCarouselDesktop" class="carousel slide d-none d-md-block" data-bs-ride="carousel"
+                  data-bs-interval="3000">
+                  <div class="carousel-inner" id="therapyDesktopInner"></div>
+                  <div class="carousel-indicators" id="therapyDesktopDots" style="position:relative; margin-top:12px;">
+                  </div>
+               </div>
+               <!-- ── Mobile: 2 per slide ── -->
+               <div id="therapyCarouselMobile" class="carousel slide d-block d-md-none" data-bs-ride="carousel"
+                  data-bs-interval="3000">
+                  <div class="carousel-inner" id="therapyMobileInner"></div>
+                  <div class="carousel-indicators" id="therapyMobileDots" style="position:relative; margin-top:12px;">
+                  </div>
+               </div>
+            </div>
+            <script>
+               (function () {
+                  var imgs = [
+                     { src: 'img/therapy/gkc-therapy-motor-skills-ball.jpeg', alt: 'Child doing motor skills ball exercise during therapy at Global Kids Campus Lahore' },
+                     { src: 'img/therapy/gkc-therapy-climbing-wall.jpeg', alt: 'Child climbing colourful rock wall in therapy session at GKC' },
+                     { src: 'img/therapy/gkc-therapy-hula-hoop-session.jpeg', alt: 'Therapist guiding child through hula hoop coordination exercise at GKC Therapy Centre' },
+                     { src: 'img/therapy/gkc-therapy-supported-climbing.jpeg', alt: 'Therapist supporting child on climbing wall at Global Kids Campus Therapy Centre Lahore' },
+                     { src: 'img/therapy/gkc-therapy-hoop-balance.jpeg', alt: 'Child practising balance and coordination with hula hoop at GKC therapy session' },
+                     { src: 'img/therapy/gkc-therapy-balance-board.jpeg', alt: 'Child standing on balance board during occupational therapy at Global Kids Campus' },
+                     { src: 'img/therapy/gkc-therapy-aba-attention-exercise.jpeg', alt: 'ABA therapy attention and focus exercise with child at GKC Lahore' },
+                     { src: 'img/therapy/gkc-therapy-aba-ring-stacking.jpeg', alt: 'ABA therapy ring stacking activity with child at Global Kids Campus Therapy Centre' },
+                     { src: 'img/therapy/gkc-therapy-climbing-frame.jpg', alt: 'Child climbing pink therapy frame during motor therapy session at GKC' },
+                     { src: 'img/therapy/gkc-therapy-monkey-bars.jpeg', alt: 'Child building strength on monkey bars at GKC Therapy Centre Lahore' },
+                     { src: 'img/therapy/gkc-therapy-speech-therapy-room.jpg', alt: 'Speech therapy session with certified therapist at Global Kids Campus Lahore' },
+                     { src: 'img/therapy/gkc-therapy-writing-exercise.jpg', alt: 'Child practising letter writing during educational therapy at GKC' },
+                     { src: 'img/therapy/gkc-therapy-flashcard-session.jpg', alt: 'Therapist using flashcards with child during speech and language session at GKC Lahore' }
+                  ];
+                  for (var i = imgs.length - 1; i > 0; i--) {
+                     var j = Math.floor(Math.random() * (i + 1));
+                     var tmp = imgs[i]; imgs[i] = imgs[j]; imgs[j] = tmp;
+                  }
+                  function buildCarousel(innerId, dotsId, targetId, perSlide) {
+                     var inner = document.getElementById(innerId);
+                     var dots = document.getElementById(dotsId);
+                     var rowClass = perSlide === 3 ? 'therapy-slide-row-3' : 'therapy-slide-row-2';
+                     var slideCount = Math.ceil(imgs.length / perSlide);
+                     for (var s = 0; s < slideCount; s++) {
+                        var item = document.createElement('div');
+                        item.className = 'carousel-item' + (s === 0 ? ' active' : '');
+                        var row = document.createElement('div');
+                        row.className = rowClass;
+                        for (var k = s * perSlide; k < s * perSlide + perSlide; k++) {
+                           var idx = k % imgs.length;
+                           var cell = document.createElement('div');
+                           cell.className = 'therapy-img-cell';
+                           var img = document.createElement('img');
+                           img.src = imgs[idx].src;
+                           img.alt = imgs[idx].alt;
+                           cell.appendChild(img);
+                           row.appendChild(cell);
+                        }
+                        item.appendChild(row);
+                        inner.appendChild(item);
+                        var btn = document.createElement('button');
+                        btn.type = 'button';
+                        btn.setAttribute('data-bs-target', '#' + targetId);
+                        btn.setAttribute('data-bs-slide-to', s);
+                        if (s === 0) btn.className = 'active';
+                        dots.appendChild(btn);
+                     }
+                  }
+                  buildCarousel('therapyDesktopInner', 'therapyDesktopDots', 'therapyCarouselDesktop', 3);
+                  buildCarousel('therapyMobileInner', 'therapyMobileDots', 'therapyCarouselMobile', 2);
+               })();
+            </script>
+
+            <!-- Services Heading -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-5">
+               <div class="section-heading mb-5">
+                  <h2>Our Services</h2>
+               </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="row g-4">
+               <!-- Service 1 -->
+               <div class="col-12">
+                  <div class="module-row h-100" style="border-color:#f11a49; align-items: center;">
+                     <div class="module-num" style="background:#f11a49;">1</div>
+                     <img src="img/therapy/gkc-therapy-speech-therapy-room.jpg"
+                        alt="Speech therapy session with certified therapist at Global Kids Campus Lahore"
+                        class="rounded-circle shadow-sm flex-shrink-0"
+                        style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #f11a49;">
+                     <div>
+                        <h6>Speech Therapy</h6>
+                        <p>Focused on improving communication skills, articulation, language development, and
+                           confidence. Our certified speech therapists work closely with each child to overcome speech
+                           delays, stuttering, and comprehension challenges. We use play-based, highly interactive
+                           sessions to make learning enjoyable and effective, giving children the tools they need to
+                           express themselves clearly and connect with the world around them.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Service 2 -->
+               <div class="col-12">
+                  <div class="module-row h-100" style="border-color:#9c27b0; align-items: center;">
+                     <div class="module-num" style="background:#9c27b0;">2</div>
+                     <img src="img/therapy/gkc-therapy-aba-ring-stacking.jpeg"
+                        alt="ABA therapy ring stacking activity with child at Global Kids Campus Therapy Centre"
+                        class="rounded-circle shadow-sm flex-shrink-0"
+                        style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #9c27b0;">
+                     <div>
+                        <h6>ABA Therapy (Applied Behavior Analysis)</h6>
+                        <p>Structured behavioral interventions to improve social, communication, and learning skills.
+                           Applied Behavior Analysis (ABA) helps children develop positive behaviors and reduce
+                           challenging ones by breaking down complex tasks into manageable steps. Our dedicated
+                           therapists create personalized programs that encourage meaningful progress, fostering
+                           independence and helping children thrive in their everyday environments.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Service 3 -->
+               <div class="col-12">
+                  <div class="module-row h-100" style="border-color:#009688; align-items: center;">
+                     <div class="module-num" style="background:#009688;">3</div>
+                     <img src="img/therapy/gkc-therapy-aba-attention-exercise.jpeg"
+                        alt="Educational therapy attention and focus exercise with child at GKC Lahore"
+                        class="rounded-circle shadow-sm flex-shrink-0"
+                        style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #009688;">
+                     <div>
+                        <h6>Educational Therapy</h6>
+                        <p>Tailored support for children with learning difficulties, focusing on academic skills,
+                           comprehension, and cognitive development. We understand that every child learns differently,
+                           which is why we provide individualized strategies to bridge learning gaps. By building
+                           foundational skills and boosting academic confidence, we empower children to discover the joy
+                           of learning and succeed both inside and outside the classroom.</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Service 4 -->
+               <div class="col-12">
+                  <div class="module-row h-100" style="border-color:#2196f3; align-items: center;">
+                     <div class="module-num" style="background:#2196f3;">4</div>
+                     <img src="img/therapy/gkc-therapy-monkey-bars.jpeg"
+                        alt="Child building strength and confidence on monkey bars at GKC Therapy Centre Lahore"
+                        class="rounded-circle shadow-sm flex-shrink-0"
+                        style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #2196f3;">
+                     <div>
+                        <h6>Support for Learning Disabilities</h6>
+                        <p>Individualized plans to help children overcome challenges in reading, writing, and
+                           understanding concepts. We provide specialized intervention for children with dyslexia,
+                           dyscalculia, and other learning differences. Using multi-sensory strategies, we ensure every
+                           child receives the compassionate guidance they need to break down barriers, unlock their full
+                           potential, and celebrate their unique way of learning.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /single-page-collumn -->
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /services container -->
+
+   <!-- ══════════════════════════════════════════════════════════════
+        PHOTO BANNER (kidscholl style)
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="gkc-photo-banner">
+      <div class="container">
+         <div class="d-flex align-items-end justify-content-between flex-wrap gap-4">
+
+            <!-- Left: heading + buttons -->
+            <div>
+               <h2 class="gkc-photo-banner__heading">
+                  Childhood is not a race —<br>it is a journey.
+               </h2>
+               <div class="d-flex align-items-center gap-4 flex-wrap">
+                  <a href="index.html#contact" class="kc-explore-btn">
+                     Book a Session <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="d-flex align-items-center gap-2">
+                     <i class="fa fa-phone-alt" style="color:#fff; font-size:1.1rem;" aria-hidden="true"></i>
+                     <div>
+                        <span class="gkc-banner-phone">Call Us</span>
+                        <a href="tel:+923001234567" class="gkc-banner-phone-num">+92 300 000 0000</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Wave divider at bottom of banner -->
+      <div class="banner-wave" aria-hidden="true">
+         <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1380,30 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/>
+         </svg>
+      </div>
+   </section>
+
+   <div class="container">
+      <div class="row">
+         <div class="single-page-collumn col-lg-12">
+
+            <!-- Our Focus Section -->
+            <div class="col-lg-8 offset-lg-2 mt-5 pt-4">
+               <div class="section-heading mb-5">
+                  <h2>Our Focus</h2>
+               </div>
+            </div>
+            <div class="row text-center g-3">
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#f11a49;"><i class="fa fa-user-md"></i></div>
+                  <h5 style="color:#f11a49;">Certified Therapists</h5>
+                  <div class="card-squiggle" style="background:#f11a49;"></div>
+                  <p>Our team of qualified, experienced therapists specialise in paediatric development. Every child
+                     receives expert, compassionate care delivered by professionals who are passionate about making a
+                     real difference.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#009688;"><i class="fa fa-clipboard-list"></i></div>
+                  <h5 style="color:#009688;">Individualised Plans</h5>
+                  <div class="card-squiggle" style="background:#009688;"></div>
+                  <p>No two children are the same. We design personalised therapy programmes based on thorough
+                     assessments, ensuring that every goal, activity, and milestone is tailored specifically to each
+                     child's unique needs and strengths.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#ff8c00;"><i class="fa fa-shield-alt"></i></div>
+                  <h5 style="color:#ff8c00;">Safe &amp; Calm Environment</h5>
+                  <div class="card-squiggle" style="background:#ff8c00;"></div>
+                  <p>Our therapy spaces are thoughtfully designed to be calming, distraction-free, and child-friendly. A
+                     secure environment allows children to feel at ease, build trust with their therapist, and focus on
+                     meaningful progress.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#9c27b0;"><i class="fa fa-hands-helping"></i></div>
+                  <h5 style="color:#9c27b0;">Parent Partnership</h5>
+                  <div class="card-squiggle" style="background:#9c27b0;"></div>
+                  <p>We keep families closely involved through regular progress updates, parent guidance sessions, and
+                     open communication. A strong partnership between home and our centre is key to achieving lasting
+                     results for every child.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#4caf50;"><i class="fa fa-brain"></i></div>
+                  <h5 style="color:#4caf50;">Evidence-Based Methods</h5>
+                  <div class="card-squiggle" style="background:#4caf50;"></div>
+                  <p>All our therapy programmes are grounded in internationally recognised, research-backed
+                     methodologies. We continuously update our practices to reflect the latest advances in paediatric
+                     therapy and child development science.</p>
+               </div>
+               <div class="col-md-4 col-sm-6 col-12 mb-3 focus-card">
+                  <div class="focus-blob" style="background:#2196f3;"><i class="fa fa-chart-line"></i></div>
+                  <h5 style="color:#2196f3;">Measurable Progress</h5>
+                  <div class="card-squiggle" style="background:#2196f3;"></div>
+                  <p>We set clear, achievable goals and track every child's journey with detailed progress reports.
+                     Families can see real, tangible improvement — giving both children and parents the confidence that
+                     they are moving in the right direction.</p>
+               </div>
+            </div>
+
+            <div class="row mt-5 align-items-center g-4">
+               <div class="col-md-5">
+                  <img src="img/therapy/gkc-therapy-balance-board.jpeg"
+                     alt="Child standing tall on balance board at Global Kids Campus Therapy Centre Lahore"
+                     class="img-fluid rounded-4 shadow-lg w-100"
+                     style="height: 380px; object-fit: cover; border: 5px solid #fff;">
+               </div>
+               <div class="col-md-7">
+                  <div class="color_block m-0 h-100">
+                     <h4>Empowering Every Child</h4>
+                     <p>Our aim is to empower every child by building their confidence, enhancing their abilities, and
+                        helping them reach their full potential. We believe that with the right guidance, patience, and
+                        encouragement, every child can overcome their unique hurdles and discover their true strengths.
+                     </p>
+                     <p>At Global Kids Campus Therapy Centre, no challenge is too great. We provide a supportive,
+                        inclusive, and joyful environment where children feel safe to learn and grow at their own pace.
+                        We walk alongside every child and family with dedication, care, and hope, ensuring that therapy
+                        is a positive and transformative journey.</p>
+                     <a class="btn mt-2" href="index.html#contact">Contact us</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /single-page-collumn -->
+      </div>
+      <!-- /row -->
+   </div>
+   <!-- /page -->
+
+   <!-- Footer -->
+   <div id="footer-divider" class="container-fluid cloud-divider white">
+      <!-- Clouds SVG Divider -->
+      <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+         viewBox="0 0 100 100" preserveAspectRatio="none">
+         <path d="M-5 100 Q 0 20 5 100 Z
+               M0 100 Q 5 0 10 100
+               M5 100 Q 10 30 15 100
+               M10 100 Q 15 10 20 100
+               M15 100 Q 20 30 25 100
+               M20 100 Q 25 -10 30 100
+               M25 100 Q 30 10 35 100
+               M30 100 Q 35 30 40 100
+               M35 100 Q 40 10 45 100
+               M40 100 Q 45 50 50 100
+               M45 100 Q 50 20 55 100
+               M50 100 Q 55 40 60 100
+               M55 100 Q 60 60 65 100
+               M60 100 Q 65 50 70 100
+               M65 100 Q 70 20 75 100
+               M70 100 Q 75 45 80 100
+               M75 100 Q 80 30 85 100
+               M80 100 Q 85 20 90 100
+               M85 100 Q 90 50 95 100
+               M90 100 Q 95 25 100 100
+               M95 100 Q 100 15 105 100 Z">
+         </path>
+      </svg>
+   </div>
+   <div id="footer-placeholder"></div>
+   <!-- Core JavaScript Files -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <!-- Main Js -->
+   <script src="js/main.js"></script>
+   <!--Other Plugins -->
+   <script src="js/plugins.js"></script>
+</body>
+
+</html>

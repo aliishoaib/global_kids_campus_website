@@ -1,0 +1,307 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e9]:
+    - generic [ref=e10]:
+      - generic: 
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "Home" [ref=e14] [cursor=pointer]:
+            - /url: "#layerslider"
+        - listitem [ref=e15]:
+          - link "About" [ref=e16] [cursor=pointer]:
+            - /url: "#about"
+        - listitem [ref=e17]:
+          - link "Gallery" [ref=e18] [cursor=pointer]:
+            - /url: "#gallery"
+        - listitem [ref=e19]:
+          - link:
+            - /url: "#page-top"
+        - listitem [ref=e20]
+        - listitem [ref=e21]:
+          - button "Programs" [ref=e22] [cursor=pointer]
+        - listitem [ref=e23]:
+          - button "Branches" [ref=e24] [cursor=pointer]
+        - listitem [ref=e25]:
+          - link "Contact" [ref=e26] [cursor=pointer]:
+            - /url: "#contact"
+  - img [ref=e29]
+  - generic [ref=e31]:
+    - heading " Our Services" [level=2] [ref=e34]
+    - generic [ref=e36]:
+      - heading "A Nurturing Montessori Environment" [level=3] [ref=e37]
+      - paragraph [ref=e38]: Global Kids Campus provides a safe, stimulating, and "home away from home" environment for children to feel secure, valued, and inspired to grow.
+      - paragraph [ref=e39]: Our Montessori-based Daycare blends expert care with early learning. We follow authentic principles that encourage independence and confidence, ensuring each child thrives at their own individual pace through structured, play-based exploration.
+      - link "Book a Campus Tour" [ref=e41] [cursor=pointer]:
+        - /url: "#contact"
+    - generic [ref=e43]:
+      - link "Daycare Montessori Daycare (Ages 3 months - 10 years) A nurturing \"home away from home\" focusing on EPL, Sensorial activities, and emotional comfort through a structured yet flexible routine. " [ref=e45] [cursor=pointer]:
+        - /url: daycare.html
+        - img "Daycare" [ref=e47]
+        - generic [ref=e48]: Montessori Daycare
+        - generic [ref=e49]: (Ages 3 months - 10 years)
+        - paragraph [ref=e50]: A nurturing "home away from home" focusing on EPL, Sensorial activities, and emotional comfort through a structured yet flexible routine.
+        - generic [ref=e52]: 
+      - link "Preschool Montessori Preschool (Academic Foundation) Laying a strong academic and developmental foundation through exploration, Mathematics, English & Urdu Phonics, and Early Literacy. " [ref=e54] [cursor=pointer]:
+        - /url: preschool.html
+        - img "Preschool" [ref=e56]
+        - generic [ref=e57]: Montessori Preschool
+        - generic [ref=e58]: (Academic Foundation)
+        - paragraph [ref=e59]: Laying a strong academic and developmental foundation through exploration, Mathematics, English & Urdu Phonics, and Early Literacy.
+        - generic [ref=e61]: 
+      - link "Therapy Centre Therapy Centre (Specialized Support) Professional Speech Therapy, ABA Therapy, and individualized educational support plans for children with speech and learning challenges. " [ref=e63] [cursor=pointer]:
+        - /url: therapy.html
+        - img "Therapy Centre" [ref=e65]
+        - generic [ref=e66]: Therapy Centre
+        - generic [ref=e67]: (Specialized Support)
+        - paragraph [ref=e68]: Professional Speech Therapy, ABA Therapy, and individualized educational support plans for children with speech and learning challenges.
+        - generic [ref=e70]: 
+  - generic [ref=e127]:
+    - heading "Visit Our Daycare" [level=3] [ref=e128]
+    - paragraph [ref=e129]: Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi Suspendisse a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis..
+    - link "Contact us" [ref=e131] [cursor=pointer]:
+      - /url: "#contact"
+  - generic [ref=e133]:
+    - heading " About us" [level=2] [ref=e136]
+    - generic [ref=e137]:
+      - generic [ref=e139]:
+        - generic [ref=e141]:
+          - tabpanel [ref=e142]
+          - tabpanel [ref=e143]
+          - tabpanel [ref=e144]
+        - tablist [ref=e145]:
+          - tab "1 of 3" [selected] [ref=e146] [cursor=pointer]: "1"
+          - tab "2 of 3" [ref=e147] [cursor=pointer]: "2"
+          - tab "3 of 3" [ref=e148] [cursor=pointer]: "3"
+      - generic [ref=e149]:
+        - heading "The Montessori Way" [level=3] [ref=e150]
+        - paragraph [ref=e151]: At Global Kids Campus, we offer an authentic Montessori environment where children feel secure and inspired. By blending expert care with principles of independence and exploration, we build a strong academic and emotional foundation. We ensure every child develops at their own pace in a nurturing "home away from home" during their most critical early years.
+        - paragraph [ref=e152]: Our curriculum focuses on holistic growth through specialized EPL and Sensorial training. We emphasize early literacy via English, Urdu, and Jolly Phonics to master communication skills early on. By integrating structured play with cognitive learning, we help children refine their senses and build the discipline necessary for future academic success.
+        - paragraph [ref=e153]: Our specialized Therapy Centre supports children with speech, behavioral, and learning challenges by merging therapeutic practices with Montessori values. Our trained therapists provide one-on-one interventions that empower students to reach their full potential. We provide a compassionate, safe space where every child is given the tools to thrive and succeed.
+  - generic [ref=e155]:
+    - generic [ref=e158]:
+      - heading "Our Features" [level=2] [ref=e159]
+      - paragraph [ref=e160]: Benefits For You
+    - generic [ref=e163]:
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - generic [ref=e167]: 
+          - heading "Safe Environment" [level=5] [ref=e168]
+          - paragraph [ref=e169]: A nurturing "home away from home" where every child feels secure and inspired to grow.
+        - generic [ref=e170]:
+          - generic [ref=e172]: 
+          - heading "Infant Care" [level=5] [ref=e173]
+          - paragraph [ref=e174]: Loving, specialised care for our youngest learners from 3 months and above.
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e178]: 
+          - heading "Qualified Teachers" [level=5] [ref=e179]
+          - paragraph [ref=e180]: Qualified Montessori educators dedicated to unlocking every child's unique potential.
+        - generic [ref=e181]:
+          - generic [ref=e183]: 
+          - heading "Small Class Sizes" [level=5] [ref=e184]
+          - paragraph [ref=e185]: Intimate classrooms ensure personalised attention so every child thrives at their pace.
+  - generic [ref=e194]:
+    - heading "What Parents Think" [level=3] [ref=e195]
+    - generic [ref=e196]:
+      - button "Previous" [ref=e197] [cursor=pointer]: Previous
+      - generic [ref=e199]:
+        - blockquote [ref=e200]:
+          - generic [ref=e201]:
+            - text: 
+            - paragraph [ref=e202]: "\"Enrolling our daughter here was the best decision we made. The curriculum is perfectly balanced between playful activities and early learning. We've seen a massive improvement in her social skills and confidence. Highly recommend!\""
+            - generic [ref=e203]:
+              - generic [ref=e204]: 
+              - text: David Gomez, Parent
+        - blockquote [ref=e205]:
+          - generic [ref=e206]:
+            - text: 
+            - paragraph [ref=e207]: "\"We love Global Kids Campus! The staff genuinely cares about each child's individual development. The playground and art programs are fantastic, and we always feel like we're part of a wonderful, supportive community.\""
+            - generic [ref=e208]:
+              - generic [ref=e209]: 
+              - text: Michael Rossi, Parent
+        - tabpanel [ref=e210]:
+          - generic [ref=e211]:
+            - text: 
+            - paragraph [ref=e212]: "\"Global Kids Campus is an absolute blessing! The teachers are incredibly caring and my son comes home every day excited to tell me about the new things he's learned. The facility is spotless and safe, and I couldn't be happier.\""
+            - generic [ref=e213]:
+              - generic [ref=e214]: 
+              - text: Sarah Jenkins, Parent
+        - tabpanel [ref=e215]:
+          - generic [ref=e216]:
+            - text: 
+            - paragraph [ref=e217]: "\"Enrolling our daughter here was the best decision we made. The curriculum is perfectly balanced between playful activities and early learning. We've seen a massive improvement in her social skills and confidence. Highly recommend!\""
+            - generic [ref=e218]:
+              - generic [ref=e219]: 
+              - text: David Gomez, Parent
+        - tabpanel [ref=e220]:
+          - generic [ref=e221]:
+            - text: 
+            - paragraph [ref=e222]: "\"We love Global Kids Campus! The staff genuinely cares about each child's individual development. The playground and art programs are fantastic, and we always feel like we're part of a wonderful, supportive community.\""
+            - generic [ref=e223]:
+              - generic [ref=e224]: 
+              - text: Michael Rossi, Parent
+        - blockquote [ref=e225]:
+          - generic [ref=e226]:
+            - text: 
+            - paragraph [ref=e227]: "\"Global Kids Campus is an absolute blessing! The teachers are incredibly caring and my son comes home every day excited to tell me about the new things he's learned. The facility is spotless and safe, and I couldn't be happier.\""
+            - generic [ref=e228]:
+              - generic [ref=e229]: 
+              - text: Sarah Jenkins, Parent
+        - blockquote [ref=e230]:
+          - generic [ref=e231]:
+            - text: 
+            - paragraph [ref=e232]: "\"Enrolling our daughter here was the best decision we made. The curriculum is perfectly balanced between playful activities and early learning. We've seen a massive improvement in her social skills and confidence. Highly recommend!\""
+            - generic [ref=e233]:
+              - generic [ref=e234]: 
+              - text: David Gomez, Parent
+        - blockquote [ref=e235]:
+          - generic [ref=e236]:
+            - text: 
+            - paragraph [ref=e237]: "\"We love Global Kids Campus! The staff genuinely cares about each child's individual development. The playground and art programs are fantastic, and we always feel like we're part of a wonderful, supportive community.\""
+            - generic [ref=e238]:
+              - generic [ref=e239]: 
+              - text: Michael Rossi, Parent
+      - button "Next" [ref=e240] [cursor=pointer]: Next
+      - tablist [ref=e241]:
+        - tab "1 of 2" [selected] [ref=e242] [cursor=pointer]: "1"
+        - tab "2 of 2" [ref=e243] [cursor=pointer]: "2"
+        - tab "3 of 2" [ref=e244] [cursor=pointer]: "3"
+  - generic [ref=e247]:
+    - generic [ref=e250]:
+      - generic [ref=e251]: 
+      - generic [ref=e252]:
+        - generic [ref=e253]: +
+        - generic [ref=e254]: + 0
+      - heading "Professionals" [level=3] [ref=e255]
+    - generic [ref=e258]:
+      - generic [ref=e259]: 
+      - generic [ref=e260]:
+        - generic [ref=e261]: +
+        - generic [ref=e262]: + 0
+      - heading "Students" [level=3] [ref=e263]
+    - generic [ref=e266]:
+      - generic [ref=e267]: 
+      - generic [ref=e268]:
+        - generic [ref=e269]: +
+        - generic [ref=e270]: + 0
+      - heading "Happy Parents" [level=3] [ref=e271]
+  - generic [ref=e273]:
+    - img [ref=e274]
+    - generic [ref=e276]:
+      - heading " Our Gallery" [level=2] [ref=e278]
+      - tablist [ref=e280]:
+        - tab "All" [selected] [ref=e281] [cursor=pointer]
+        - tab "Events" [ref=e282] [cursor=pointer]
+        - tab "Our Facilities" [ref=e283] [cursor=pointer]
+      - generic [ref=e286]:
+        - link "" [ref=e291] [cursor=pointer]:
+          - /url: img/gallery1.jpg
+          - generic [ref=e292]: 
+        - link "" [ref=e297] [cursor=pointer]:
+          - /url: img/gallery2.jpg
+          - generic [ref=e298]: 
+        - link "" [ref=e303] [cursor=pointer]:
+          - /url: img/gallery3.jpg
+          - generic [ref=e304]: 
+        - link "" [ref=e309] [cursor=pointer]:
+          - /url: img/gallery4.jpg
+          - generic [ref=e310]: 
+        - link "" [ref=e315] [cursor=pointer]:
+          - /url: img/gallery5.jpg
+          - generic [ref=e316]: 
+        - link "" [ref=e321] [cursor=pointer]:
+          - /url: img/gallery6.jpg
+          - generic [ref=e322]: 
+        - link "" [ref=e327] [cursor=pointer]:
+          - /url: img/gallery7.jpg
+          - generic [ref=e328]: 
+        - link "" [ref=e333] [cursor=pointer]:
+          - /url: img/gallery8.jpg
+          - generic [ref=e334]: 
+        - link "" [ref=e339] [cursor=pointer]:
+          - /url: img/gallery9.jpg
+          - generic [ref=e340]: 
+        - link "" [ref=e345] [cursor=pointer]:
+          - /url: img/gallery10.jpg
+          - generic [ref=e346]: 
+        - link "" [ref=e351] [cursor=pointer]:
+          - /url: img/gallery11.jpg
+          - generic [ref=e352]: 
+        - link "" [ref=e357] [cursor=pointer]:
+          - /url: img/gallery12.jpg
+          - generic [ref=e358]: 
+  - generic [ref=e362]:
+    - heading "Join Global Kids Campus!" [level=3] [ref=e363]
+    - paragraph [ref=e364]: Enroll your child today in our highly rated Montessori programs and set them on a path for lifelong learning. Experience our vibrant classrooms and passionate educators.
+    - link "About Us" [ref=e366] [cursor=pointer]:
+      - /url: "#about"
+  - generic [ref=e369]:
+    - heading " Contact us" [level=2] [ref=e372]
+    - generic [ref=e373]:
+      - heading "Information" [level=3] [ref=e374]
+      - generic [ref=e375]:
+        - paragraph [ref=e376]:
+          - generic [ref=e377]: 
+          - link "info@globalkidscampus.com" [ref=e378] [cursor=pointer]:
+            - /url: mailto:info@globalkidscampus.com
+        - paragraph [ref=e379]:
+          - generic [ref=e380]: 
+          - text: Call us to book a tour
+      - paragraph [ref=e381]: We have two beautiful campuses in Lahore.
+      - generic [ref=e383]:
+        - generic [ref=e384]:
+          - iframe [ref=e386]
+          - heading "Wapda Town" [level=6] [ref=e387]
+          - text: Campus
+        - generic [ref=e388]:
+          - iframe [ref=e390]
+          - heading "DHA" [level=6] [ref=e391]
+          - text: Campus
+    - generic [ref=e392]:
+      - heading "Write us" [level=4] [ref=e393]
+      - generic [ref=e394]:
+        - generic [ref=e395]:
+          - textbox "Name" [ref=e396]
+          - textbox "Email ID" [ref=e397]
+          - textbox "Subject" [ref=e398]
+        - textbox "Enter your message" [ref=e399]
+        - button "Send message" [ref=e400] [cursor=pointer]
+  - img [ref=e402]
+  - contentinfo [ref=e403]:
+    - generic [ref=e405]:
+      - generic [ref=e406]:
+        - heading "Sign our Newsletter" [level=5] [ref=e407]
+        - generic [ref=e410]:
+          - textbox "Email address" [ref=e412]
+          - button "Subscribe" [ref=e415] [cursor=pointer]
+      - generic [ref=e416]:
+        - link [ref=e417] [cursor=pointer]:
+          - /url: "#page-top"
+        - generic [ref=e418]:
+          - link "" [ref=e419] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e420]: 
+          - link "" [ref=e421] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e422]: 
+          - link "" [ref=e423] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e424]: 
+          - link "" [ref=e425] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e426]: 
+          - link "" [ref=e427] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e428]: 
+      - generic [ref=e429]:
+        - paragraph [ref=e430]: "Opening Hours:"
+        - table [ref=e431]:
+          - rowgroup [ref=e432]:
+            - row "Monday to Friday 7 a.m. to 7 p.m." [ref=e433]:
+              - cell "Monday to Friday" [ref=e434]
+              - cell "7 a.m. to 7 p.m." [ref=e435]
+            - row "Weekends / Holidays Closed" [ref=e436]:
+              - cell "Weekends / Holidays" [ref=e437]
+              - cell "Closed" [ref=e438]:
+                - generic [ref=e439]: Closed
+    - separator [ref=e440]
+    - generic: 

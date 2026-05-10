@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="description" content="Global Kids Campus Wapda Town branch offers Montessori daycare, preschool, and therapy services for children in Wapda Town, Lahore. Visit us Monday–Friday 7 AM – 7 PM.">
+      <meta name="author" content="Global Kids Campus">
+      <title>Wapda Town Branch - Global Kids Campus</title>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="fonts/flaticons/flaticon.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Lato:400,700,800%7CAlegreya+Sans:700,900' rel='stylesheet' type='text/css'>
+      <link href="css/style.css" rel="stylesheet">
+      <link href="styles/maincolors.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/plugins.css">
+      
+      
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-gkc.png">
+   <link rel="shortcut icon" href="img/favicon-gkc.png" type="image/x-icon">
+      <style>
+         /* === GKC overrides for abctots page layout === */
+         .page { padding: 50px 0 60px; }
+         .page-with-sidebar p, .page-with-sidebar li, .page-with-sidebar td { color: #111; }
+         .page-with-sidebar h2 { color: #111; font-family: 'Alegreya Sans', serif; font-weight: 900; font-size: 2.2rem; }
+         .page-with-sidebar h3, .page-with-sidebar h4, .page-with-sidebar h5 { color: #111; font-family: 'Alegreya Sans', serif; text-transform: none !important; }
+         .page-with-sidebar a { color: #f11a49; }
+         .page-with-sidebar a:hover { color: #c00035; }
+         /* Image */
+         .page-main-image { border: none; border-radius: 12px; }
+         /* Accordion */
+         .accordion .card { border-radius: 14px !important; margin-bottom: 10px; border: 1px solid #fde; overflow: hidden; }
+         .accordion .card-header { background: #fff5f7; border: none; }
+         .accordion .card-header a { color: #111; font-weight: 600; text-decoration: none; display: block; }
+         /* Custom list */
+         .custom li { padding: 8px 0 8px 10px; border-bottom: 1px dashed #fde; list-style: none; color: #111; }
+         .custom li::before { content: "✦ "; color: #f11a49; font-size: 0.8rem; }
+         /* Custom link */
+         .custom-link { color: #f11a49; font-weight: 600; text-decoration: none; }
+         .custom-link:hover { color: #c00035; text-decoration: underline; }
+         /* CTA button */
+         .btn-secondary { background: #f11a49 !important; border-color: #f11a49 !important; border-radius: 30px; }
+         .btn-secondary:hover { background: #c00035 !important; border-color: #c00035 !important; }
+         /* Sidebar notepad widget */
+         .widget-area.notepad { background: #f9f9f9; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.07); border-top: 4px solid #f11a49; margin-bottom: 20px; }
+         .widget-area.notepad .sidebar-header { color: #222; font-weight: 800; font-family: 'Alegreya Sans', serif; font-size: 1.05rem; margin-bottom: 14px; letter-spacing: 0.3px; }
+         .widget-area.notepad p { color: #555; font-size: 0.9rem; line-height: 1.5; }
+         .widget-area.notepad .list-group-item { border-radius: 6px !important; margin-bottom: 4px; border: 1px solid #eee !important; background: #fff; color: #444; font-weight: 500; font-size: 0.9rem; padding: 9px 14px; }
+         .widget-area.notepad .list-group-item:hover { background: #fff0f3 !important; color: #f11a49; border-color: #fcc !important; text-decoration: none; }
+         .widget-area.notepad .list-group-item.active { background-color: #f11a49 !important; border-color: #f11a49 !important; color: #fff !important; }
+         .widget-area.notepad .btn { font-size: 0.8rem; padding: 7px 16px; border-radius: 20px; }
+         @media (min-width: 992px) { .position-sticky-lg { position: sticky; top: 90px; align-self: flex-start; } }
+         @media (max-width: 767px) {
+            .page-with-sidebar h2 { font-size: 1.55rem; }
+            .page-with-sidebar h4 { font-size: 1.1rem; }
+            .page { padding: 30px 0 40px; }
+            .gallery-thumb { height: 120px; }
+            .btn-secondary { font-size: 0.85rem; padding: 9px 18px; }
+         }
+         /* Contact Bar */
+         .contact-bar { background: #fef9f0; border-radius: 12px; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; margin-bottom: 24px; }
+         .contact-bar-item { display: flex; align-items: center; gap: 10px; font-size: 0.95rem; color: #111; }
+         .contact-bar-item i { color: #f11a49; font-size: 1.1rem; }
+         .contact-bar-item a { color: #f11a49; font-weight: 600; text-decoration: none; }
+         .contact-bar-item a:hover { color: #c00035; }
+         /* Gallery */
+         .gallery-thumb { border-radius: 12px; object-fit: cover; height: 180px; width: 100%; }
+         .gallery-label { margin-top: 8px; font-weight: 600; color: #111; font-size: 0.9rem; }
+         /* Social Proof Bar */
+         .social-proof-inner { background: #009688; color: #fff; border-radius: 12px; padding: 20px 16px; }
+         .social-proof-inner .sp-item { text-align: center; color: #fff; font-size: 0.88rem; }
+         .social-proof-inner .sp-item strong { font-size: 1.35rem; display: block; margin-bottom: 2px; }
+         /* Timings */
+         .timings-list { list-style: none; padding: 0; margin: 0; }
+         .timings-list li { padding: 9px 0; border-bottom: 1px dashed #fde; display: flex; align-items: center; gap: 12px; color: #111; }
+         .timings-list li i { color: #f11a49; width: 18px; text-align: center; }
+         /* Fee */
+         .fee-block { background: #fff5f7; border-left: 4px solid #f11a49; border-radius: 8px; padding: 18px 22px; margin-top: 12px; }
+         .fee-block .fee-main { font-size: 1.05rem; font-weight: 700; color: #f11a49; }
+         .fee-block .fee-sub { color: #555; font-size: 0.9rem; margin-top: 6px; margin-bottom: 0; }
+         /* Testimonials */
+         .testimonial-card { background: #fffbf0; border: 1px solid #f0e0d0; border-radius: 12px; padding: 20px; height: 100%; }
+         .testimonial-card .stars { color: #f11a49; margin-bottom: 10px; letter-spacing: 2px; }
+         .testimonial-card .t-quote { color: #333; font-style: italic; font-size: 0.95rem; margin-bottom: 12px; }
+         .testimonial-card .t-name { font-weight: 700; color: #111; font-size: 0.88rem; margin: 0; }
+      </style>
+      <script src="js/navbar.js" defer></script>
+      <script src="js/footer.js" defer></script>
+</head>
+   <body id="page-top" class="full">
+      <!-- Preloader -->
+      <div id="preloader">
+         <div class="preloader">
+            <span></span><span></span><span></span><span></span><span></span>
+         </div>
+      </div>
+      
+   
+   
+   <div id="navbar-placeholder"></div>
+      <!-- Jumbotron -->
+      <div class="blog jumbotron" style="background-image: url('img/daycare-hero-pink-clouds.jpg'); background-size: cover; background-position: center center;">
+         <div class="container">
+            <div class="col-lg-6 mx-auto text-center">
+               <h1 class="text-light">Wapda Town Branch</h1>
+               <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                     <li class="breadcrumb-item active" aria-current="page">Wapda Town Branch</li>
+                  </ol>
+               </nav>
+            </div>
+         </div>
+      </div>
+      <!-- Clouds SVG Divider -->
+      <svg id="deco-clouds2" class="head d-none d-md-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+         <path d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z"></path>
+      </svg>
+      <!-- Parallax objects -->
+      <div class="blog-object1 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);" data-top="transform:translatey(-80%);">
+         <img src="img/blogobject1.png" alt="">
+      </div>
+      <div class="blog-object2 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);" data-top="transform:translatey(-80%);">
+         <img src="img/blogobject2.png" alt="">
+      </div>
+
+      <!-- ==== Page Content (abctots layout) ==== -->
+      <div class="page">
+         <div class="container">
+            <div class="row">
+               <!-- Main content -->
+               <div class="col-lg-9 page-with-sidebar">
+                  <div class="col-md-12">
+                     <h2>Programs Available</h2>
+
+                     <p>Our Wapda Town Branch brings the full Global Kids Campus experience to the heart of the Wapda Town community, offering the same high-quality Montessori-based programs in a warm and welcoming local setting.</p>
+                     <p>Conveniently located for families in Wapda Town and surrounding areas, this branch maintains the same standards of care, learning, and development that parents have come to trust at Global Kids Campus.</p>
+
+                     <div class="row mt-4">
+                        <!-- Image -->
+                        <div class="col-md-5">
+                           <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-entrance.jpeg" class="img-fluid page-main-image" alt="Global Kids Campus Wapda Town Branch entrance in Lahore">
+                        </div>
+                        <!-- Text -->
+                        <div class="col-md-7 my-auto p-3 mt-3 mt-md-0">
+                           <p>All three GKC programs are fully available at our Wapda Town Branch — the same quality and standards you expect from Global Kids Campus.</p>
+                           <ul>
+                              <li><strong><a href="daycare.html">Montessori Daycare</a></strong> — Ages 3 months to 10 years</li>
+                              <li><strong><a href="preschool.html">Montessori Preschool</a></strong> — Strong foundations for preschool-age children</li>
+                              <li><strong><a href="therapy.html">Therapy Centre</a></strong> — Speech, ABA and educational therapy</li>
+                           </ul>
+                           <a href="index.html#contact" class="btn btn-secondary mt-3">Book a Visit</a>
+                        </div>
+
+                        <!-- Branch details color block -->
+                        <div class="col-md-12 mt-5">
+                           <div class="color_block">
+                              <h4>Branch Details</h4>
+                              <p>
+                                 <i class="fa fa-map-marker-alt me-2"></i><strong>Location:</strong> Wapda Town, Lahore<br>
+                                 <i class="fa fa-clock me-2"></i><strong>Hours:</strong> Monday to Friday, 7:00 AM – 7:00 PM<br>
+                                 <i class="fa fa-calendar-times me-2"></i><strong>Weekends &amp; Holidays:</strong> Closed<br>
+                                 <i class="fa fa-phone me-2"></i><strong>Phone:</strong> Contact us for branch-specific number
+                              </p>
+                           </div>
+                        </div>
+
+                        <!-- Photo Gallery + Map -->
+                        <div class="col-md-12 mt-5">
+                           <h4>Our Campus</h4>
+                           <div class="row g-3 mt-2">
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-classroom.jpeg" class="img-fluid gallery-thumb" alt="Montessori classroom at Global Kids Campus Wapda Town Lahore">
+                                 <p class="gallery-label">Classroom</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-activity-area.jpeg" class="img-fluid gallery-thumb" alt="Children's activity area at GKC Wapda Town">
+                                 <p class="gallery-label">Activity Area</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-play-area.jpeg" class="img-fluid gallery-thumb" alt="Outdoor play area at Global Kids Campus Wapda Town">
+                                 <p class="gallery-label">Play Area</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-learning-room.jpeg" class="img-fluid gallery-thumb" alt="Learning room for preschool children at GKC Wapda Town Lahore">
+                                 <p class="gallery-label">Learning Room</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-montessori-area.jpeg" class="img-fluid gallery-thumb" alt="Montessori area at Global Kids Campus Wapda Town branch">
+                                 <p class="gallery-label">Montessori Area</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-daycare-room.jpeg" class="img-fluid gallery-thumb" alt="Daycare room for infants and toddlers at GKC Wapda Town">
+                                 <p class="gallery-label">Daycare Room</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-kids-at-play.jpeg" class="img-fluid gallery-thumb" alt="Kids playing and learning at Global Kids Campus Wapda Town">
+                                 <p class="gallery-label">Kids at Play</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-sleeping-area.jpeg" class="img-fluid gallery-thumb" style="object-position: center 75%;" alt="Cozy sleeping area with individual floor beds and sky-themed mural at GKC Wapda Town">
+                                 <p class="gallery-label">Sleeping Area</p>
+                              </div>
+                              <div class="col-6 col-md-4 text-center">
+                                 <img src="img/global-kids-campus-wapda-town/global-kids-campus-wapda-town-nap-pod.jpeg" class="img-fluid gallery-thumb" style="object-position: center 75%;" alt="Infant nap pod with moon lamp and sky mural at Global Kids Campus Wapda Town Lahore">
+                                 <p class="gallery-label">Nap Pod</p>
+                              </div>
+                           </div>
+                           <p class="mt-3 mb-2" style="font-size:0.9rem;"><i class="fa fa-map-marker-alt me-2" style="color:#f11a49;"></i><strong>Wapda Town, Lahore, Punjab, Pakistan</strong></p>
+                           <iframe
+                              src="https://maps.google.com/maps?q=Wapda+Town+Lahore+Pakistan&output=embed"
+                              width="100%" height="200"
+                              style="border:0; border-radius:12px; display:block;"
+                              allowfullscreen="" loading="lazy">
+                           </iframe>
+                        </div>
+
+
+                     </div>
+                  </div>
+               </div>
+               <!-- /col-lg-9 -->
+
+               <!-- Sidebar -->
+               <div class="sidebar col-lg-3 p-4 mt-4 mt-lg-0 position-sticky-lg">
+                  <div class="card">
+                     <h5>Our Programs</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="daycare.html">Montessori Daycare</a></li>
+                        <li><a href="preschool.html">Montessori Preschool</a></li>
+                        <li><a href="therapy.html">Therapy Centre</a></li>
+                     </ul>
+                  </div>
+                  <div class="card mt-4">
+                     <h5>Our Branches</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="wapda-town.html">Wapda Town Branch</a></li>
+                        <li><a href="defence.html">Defence Branch</a></li>
+                     </ul>
+                  </div>
+                  <div class="card mt-4">
+                     <h5>Contact Us</h5>
+                     <p>Have questions about our programs? We would love to hear from you.</p>
+                     <a class="btn" href="index.html#contact">Get in Touch</a>
+                  </div>
+               </div>
+               <!-- /sidebar -->
+            </div>
+         </div>
+      </div>
+      <!-- /page -->
+
+      <!-- Footer -->
+      <div id="footer-divider" class="container-fluid cloud-divider white">
+         <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <path d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100 M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100 M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100 M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100 M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100 M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z"></path>
+         </svg>
+      </div>
+      <div id="footer-placeholder"></div>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/main.js"></script>
+      <script src="js/plugins.js"></script>
+   </body>
+</html>

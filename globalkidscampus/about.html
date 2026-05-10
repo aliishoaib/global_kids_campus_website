@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description"
+      content="Learn about Global Kids Campus — our Mission, Vision, and Philosophy. A Montessori-based early childhood institution offering Daycare, Preschool, and Therapy in Lahore.">
+   <meta name="keywords"
+      content="Global Kids Campus about, GKC mission, GKC vision, Montessori Lahore, early childhood education, about us, preschool Lahore, therapy centre Lahore">
+   <meta name="author" content="Global Kids Campus">
+   <meta property="og:title" content="About Us – Global Kids Campus">
+   <meta property="og:description"
+      content="Discover who we are, what we stand for, and how we nurture every child at Global Kids Campus.">
+   <meta property="og:type" content="website">
+   <title>About Us – Global Kids Campus</title>
+   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+   <link href="fonts/fontawesome/css/all.min.css" rel="stylesheet" type="text/css">
+   <link href="fonts/flaticons/flaticon.css" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,800%7CAlegreya+Sans:700,900" rel="stylesheet"
+      type="text/css">
+   <link href="css/style.css" rel="stylesheet">
+   <link href="styles/maincolors.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/plugins.css">
+   
+   
+   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-gkc.png">
+   <link rel="shortcut icon" href="img/favicon-gkc.png" type="image/x-icon">
+
+   <style>
+      /* ═══════════════════════════════════════════
+         Section headings (same scale as other pages)
+      ═══════════════════════════════════════════ */
+      .section-heading {
+         margin-bottom: 18px !important;
+      }
+
+      .section-heading h2 {
+         font-size: 38px !important;
+         padding: 18px 28px !important;
+         line-height: 42px !important;
+      }
+
+      .section-heading h2:before {
+         font-size: 44px !important;
+         top: -0.5em !important;
+      }
+
+      @media (max-width: 767px) {
+         .section-heading {
+            margin-bottom: 22px !important;
+         }
+
+         .section-heading h2 {
+            font-size: 24px !important;
+            padding: 12px 18px !important;
+            line-height: 28px !important;
+         }
+
+         .section-heading h2:before {
+            font-size: 30px !important;
+         }
+      }
+
+      /* ═══════════════════════════════════════════
+         WHO WE ARE — image collage
+      ═══════════════════════════════════════════ */
+      .collage-grid {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: auto auto;
+         gap: 12px;
+      }
+
+      .collage-grid img {
+         width: 100%;
+         object-fit: cover;
+         border-radius: 16px;
+         display: block;
+      }
+
+      .collage-grid .img-tall {
+         grid-row: span 2;
+         height: 100%;
+         object-position: top;
+      }
+
+      .collage-grid .img-short {
+         height: 190px;
+      }
+
+      .who-text h2 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 3rem;
+         color: #222;
+         margin-bottom: 16px;
+         line-height: 1.15;
+      }
+
+      .who-text h2 span {
+         color: #f11a49;
+      }
+
+      .who-text p {
+         color: #555;
+         font-size: 1rem;
+         line-height: 1.8;
+         margin-bottom: 14px;
+      }
+
+      .dept-chip {
+         display: inline-flex;
+         align-items: center;
+         gap: 7px;
+         padding: 6px 16px;
+         border-radius: 30px;
+         font-size: 13px;
+         font-weight: 700;
+         color: #fff;
+         margin: 4px 4px 4px 0;
+      }
+
+      .dept-chip i {
+         font-size: 14px;
+      }
+
+      /* ═══════════════════════════════════════════
+         CORE VALUES — kidscholl 3-col layout
+      ═══════════════════════════════════════════ */
+      .kc-section-heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2.5rem;
+         color: #1a1a2e;
+         line-height: 1.18;
+         margin: 0;
+      }
+
+      .kc-explore-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 10px;
+         background: #f11a49;
+         color: #fff;
+         font-weight: 700;
+         font-size: 0.9rem;
+         padding: 12px 24px;
+         border-radius: 50px;
+         text-decoration: none;
+         white-space: nowrap;
+         transition: background 0.25s ease, transform 0.2s ease;
+         flex-shrink: 0;
+      }
+
+      .kc-explore-btn:hover {
+         background: #c0143c;
+         color: #fff;
+         transform: translateY(-2px);
+      }
+
+      .kc-explore-btn i {
+         font-size: 0.85rem;
+      }
+
+      /* — Badge block (Mission / Vision / Philosophy) — */
+      .kc-center-heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2rem;
+         color: #1a1a2e;
+         margin: 6px 0 0;
+         line-height: 1.2;
+      }
+
+      .kc-center-sub {
+         color: #888;
+         font-size: 0.95rem;
+         margin: 10px 0 0;
+      }
+
+      .kc-process-label {
+         font-size: 0.82rem;
+         font-weight: 700;
+         color: #f11a49;
+         letter-spacing: 1.5px;
+         text-transform: uppercase;
+      }
+
+      .kc-premium-card {
+         background: var(--pc, #f11a49);
+         color: #fff;
+         border-radius: 20px;
+         padding: 25px 25px 30px;
+         text-align: left;
+         position: relative;
+         overflow: hidden;
+         box-shadow: 0 10px 40px rgba(0,0,0,0.06);
+         transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+         height: 100%;
+         z-index: 1;
+      }
+      .kc-premium-card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+      }
+      .pc-watermark {
+         position: absolute;
+         bottom: -20px;
+         right: -20px;
+         font-size: 150px;
+         color: #fff;
+         opacity: 0.12;
+         z-index: -1;
+         transform: rotate(-15deg);
+         transition: transform 0.5s ease;
+      }
+      .kc-premium-card:hover .pc-watermark {
+         transform: rotate(0deg) scale(1.1);
+      }
+      .pc-icon-wrap {
+         width: 70px;
+         height: 70px;
+         border-radius: 16px;
+         background: rgba(255,255,255,0.2);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 2rem;
+         color: #fff;
+         box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+         margin-bottom: 24px;
+         position: relative;
+         border: 2px solid rgba(255,255,255,0.5);
+      }
+      .pc-num {
+         font-size: 0.9rem;
+         font-weight: 800;
+         color: rgba(255,255,255,0.8);
+         letter-spacing: 1px;
+         display: block;
+         margin-bottom: 6px;
+      }
+      .pc-title {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 1.6rem;
+         color: #fff;
+         margin-bottom: 15px;
+      }
+      .pc-desc {
+         color: rgba(255,255,255,0.95);
+         font-size: 0.98rem;
+         line-height: 1.7;
+         margin: 0;
+      }
+
+      /* — Values block (feature items + image) — */
+      .kc-feature-item {
+         margin-bottom: 26px;
+      }
+
+      .kc-feature-item:last-child {
+         margin-bottom: 0;
+      }
+
+      .kc-feature-header {
+         display: flex;
+         align-items: center;
+         gap: 12px;
+         margin-bottom: 6px;
+      }
+
+      .kc-icon-wrap {
+         width: 40px;
+         height: 40px;
+         border-radius: 50%;
+         background: var(--fc, #f11a49);
+         color: #fff;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 0.9rem;
+         flex-shrink: 0;
+         transition: transform 0.25s ease;
+      }
+
+      .kc-feature-item:hover .kc-icon-wrap {
+         transform: scale(1.12);
+      }
+
+      .kc-feature-title {
+         font-family: 'Lato', sans-serif;
+         font-weight: 800;
+         font-size: 1.05rem;
+         color: #1a1a2e;
+         margin: 0;
+         line-height: 1.2;
+      }
+
+      .kc-feature-desc {
+         color: #666;
+         font-size: 0.92rem;
+         line-height: 1.7;
+         margin: 0;
+      }
+
+      .kc-center-img {
+         position: relative;
+         border-radius: 16px;
+         overflow: hidden;
+         height: 100%;
+         min-height: 420px;
+      }
+
+      .kc-center-img img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         display: block;
+         object-position: top;
+      }
+
+      .kc-stat-badge {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+         padding: 44px 20px 20px;
+         display: flex;
+         align-items: baseline;
+         gap: 10px;
+      }
+
+      .kc-stat-num {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2.8rem;
+         color: #fff;
+         line-height: 1;
+      }
+
+      .kc-stat-label {
+         font-size: 0.82rem;
+         font-weight: 600;
+         color: rgba(255,255,255,0.85);
+         line-height: 1.3;
+      }
+
+      @media (max-width: 991px) {
+         .kc-section-heading { font-size: 1.9rem; }
+         .kc-center-heading  { font-size: 1.6rem; }
+         .kc-center-img      { min-height: 280px; }
+         .kc-badge-wrap      { width: 90px; height: 90px; font-size: 2rem; }
+      }
+
+      /* ═══════════════════════════════════════════
+         PHOTO BANNER — kidscholl style
+      ═══════════════════════════════════════════ */
+      .gkc-photo-banner {
+         background-image: url('img/global-kids-campus-defence/global-kids-campus-defence-play-room.jpeg');
+         background-size: cover;
+         background-position: center center;
+         position: relative;
+         padding: 260px 0 100px;
+      }
+
+      .gkc-photo-banner::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, rgba(0,0,0,0.68) 100%);
+      }
+
+      .gkc-photo-banner .container {
+         position: relative;
+         z-index: 1;
+      }
+
+      .gkc-photo-banner__heading {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 2.8rem;
+         color: #fff;
+         line-height: 1.2;
+         margin: 0 0 24px;
+      }
+
+
+
+      .gkc-banner-phone {
+         color: rgba(255,255,255,0.75);
+         font-size: 0.8rem;
+         display: block;
+         margin-bottom: 2px;
+      }
+
+      .gkc-banner-phone-num {
+         color: #fff;
+         font-weight: 700;
+         font-size: 1rem;
+         text-decoration: none;
+      }
+
+      /* Wave divider inside photo banner */
+      .gkc-photo-banner .banner-wave {
+         position: absolute;
+         bottom: -1px;
+         left: 0;
+         width: 100%;
+         overflow: hidden;
+         line-height: 0;
+         z-index: 2;
+      }
+
+      .gkc-photo-banner .banner-wave svg {
+         display: block;
+         width: 100%;
+         height: 70px;
+      }
+
+      @media (max-width: 767px) {
+         .gkc-photo-banner { padding: 160px 0 80px; }
+         .gkc-photo-banner__heading { font-size: 1.9rem; }
+         .gkc-photo-banner .banner-wave svg { height: 40px; }
+      }
+
+      /* ═══════════════════════════════════════════
+         DEPARTMENTS SECTION
+      ═══════════════════════════════════════════ */
+      .dept-card {
+         border-radius: 20px;
+         overflow: hidden;
+         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.09);
+         height: 100%;
+         transition: transform 0.3s ease, box-shadow 0.3s ease;
+         background: #fff;
+      }
+
+      .dept-card:hover {
+         transform: translateY(-8px);
+         box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+      }
+
+      .dept-card img {
+         width: 100%;
+         height: 220px;
+         object-fit: cover;
+         display: block;
+      }
+
+      .dept-card-body {
+         padding: 26px 24px;
+      }
+
+      .dept-card-icon {
+         width: 56px;
+         height: 56px;
+         border-radius: 14px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-size: 1.5rem;
+         color: #fff;
+         margin-bottom: 16px;
+      }
+
+      .dept-card h4 {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 1.3rem;
+         color: #222;
+         margin-bottom: 10px;
+      }
+
+      .dept-card p {
+         font-size: 0.93rem;
+         color: #555;
+         line-height: 1.7;
+         margin-bottom: 18px;
+      }
+
+      .dept-link {
+         font-size: 13px;
+         font-weight: 700;
+         text-decoration: none;
+         display: inline-flex;
+         align-items: center;
+         gap: 6px;
+         transition: gap 0.2s ease;
+      }
+
+      .dept-link:hover {
+         gap: 10px;
+      }
+
+      /* ═══════════════════════════════════════════
+         COUNTER SECTION (match homepage)
+      ═══════════════════════════════════════════ */
+      .about-counter-section {
+         background: url('img/counterbg.jpg') center center / cover no-repeat;
+         position: relative;
+         padding: 60px 0;
+         margin-top: 30px;
+      }
+
+      .about-counter-section::before {
+         content: '';
+         position: absolute;
+         inset: 0;
+         background: rgba(0, 0, 0, 0.55);
+      }
+
+      .about-counter-section .container {
+         position: relative;
+         z-index: 1;
+      }
+
+      .about-stat {
+         text-align: center;
+         color: #fff;
+         padding: 20px;
+      }
+
+      .about-stat-icon {
+         font-size: 2.4rem;
+         margin-bottom: 10px;
+         opacity: 0.85;
+      }
+
+      .about-stat-num {
+         font-family: 'Alegreya Sans', serif;
+         font-weight: 900;
+         font-size: 3rem;
+         line-height: 1;
+         color: #fff;
+      }
+
+      .about-stat-num .plus {
+         font-size: 2rem;
+      }
+
+      .about-stat-label {
+         font-size: 0.9rem;
+         font-weight: 700;
+         text-transform: uppercase;
+         letter-spacing: 1.5px;
+         color: rgba(255, 255, 255, 0.75);
+         margin-top: 6px;
+      }
+
+      /* ═══════════════════════════════════════════
+         SECTION SEPARATORS
+      ═══════════════════════════════════════════ */
+      .about-section {
+         padding: 18px 0;
+      }
+
+      .about-section.alt-bg {
+         background: #fff0f3;
+      }
+
+      @media (max-width: 991px) {
+         .collage-grid {
+            grid-template-columns: 1fr 1fr;
+            max-width: 480px;
+            margin: 0 auto;
+         }
+
+         .collage-grid .img-tall {
+            height: 300px;
+         }
+
+         .collage-grid .img-short {
+            height: 140px;
+         }
+
+         .mvp-card {
+            padding: 28px 22px;
+         }
+      }
+
+      @media (max-width: 767px) {
+         .collage-grid {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+         }
+
+         .collage-grid .img-tall {
+            grid-column: span 2;
+            grid-row: span 1;
+            height: 210px;
+            object-position: center;
+         }
+
+         .collage-grid .img-short {
+            height: 140px;
+         }
+
+         .about-section {
+            padding: 16px 0;
+         }
+
+         .about-stat-num {
+            font-size: 2.2rem;
+         }
+
+         .who-text h2 {
+            font-size: 1.6rem;
+         }
+
+         .believe-big-quote {
+            font-size: 1.85rem;
+         }
+
+         .believe-row {
+            gap: 14px;
+            padding: 18px 44px 18px 16px;
+         }
+
+         .believe-blob {
+            width: 50px;
+            height: 50px;
+            font-size: 1.2rem;
+         }
+
+         .believe-promise {
+            padding: 22px 22px;
+         }
+      }
+   </style>
+
+   <script src="js/navbar.js" defer></script>
+   <script src="js/footer.js" defer></script>
+</head>
+
+<body id="page-top" class="full">
+
+   <!-- Preloader -->
+   <div id="preloader">
+      <div class="preloader">
+         <span></span><span></span><span></span><span></span><span></span>
+      </div>
+   </div>
+
+   <!-- Shared Navbar -->
+   <div id="navbar-placeholder"></div>
+
+   <!-- Jumbotron -->
+   <div class="blog jumbotron" style="background-image: url('img/daycare-hero-pink-clouds.jpg'); background-size: cover; background-position: center center;">
+      <div class="container">
+         <div class="col-lg-6 mx-auto text-center">
+            <h1 class="text-light">About Us</h1>
+            <nav aria-label="breadcrumb">
+               <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">About Us</li>
+               </ol>
+            </nav>
+         </div>
+      </div>
+   </div>
+
+   <!-- SVG cloud divider -->
+   <svg id="deco-clouds2" class="head d-none d-md-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%"
+      height="100" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100
+            M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100
+            M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100
+            M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100
+            M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100
+            M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+      </path>
+   </svg>
+
+   <!-- Parallax objects -->
+   <div class="blog-object1 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <img src="img/blogobject1.png" alt="" aria-hidden="true">
+   </div>
+   <div class="blog-object2 d-none d-lg-block" data-0="opacity:1;" data-start="transform:translatey(0%);"
+      data-top="transform:translatey(-80%);">
+      <img src="img/blogobject2.png" alt="" aria-hidden="true">
+   </div>
+
+   <!-- ══════════════════════════════════════════════════════════════
+        SECTION 1 — WHO WE ARE
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="about-section">
+      <div class="container">
+         <div class="row align-items-center g-4">
+
+            <!-- Image collage -->
+            <div class="col-lg-5 col-md-12">
+               <div class="collage-grid">
+                  <img src="img/gkc-1.jpeg" class="img-tall"
+                     alt="Children engaged in group art activity at Global Kids Campus Montessori classroom Lahore" loading="lazy">
+                  <img src="img/gkc-17.jpeg" class="img-short"
+                     alt="Child building strength and confidence on climbing wall at Global Kids Campus Lahore" loading="lazy">
+                  <img src="img/gkc-10.jpeg" class="img-short"
+                     alt="Student proudly displaying Earth Day project at Global Kids Campus Lahore" loading="lazy">
+               </div>
+            </div>
+
+            <!-- Text content -->
+            <div class="col-lg-7 col-md-12 who-text">
+               <h2>Who We <span>Are</span></h2>
+               <p>
+                  <strong>Global Kids Campus</strong> is a comprehensive early childhood institution built on the
+                  foundation of authentic Montessori principles. We are more than a school — we are a nurturing
+                  community where every child is seen, valued, and empowered to grow at their own pace.
+               </p>
+               <p>
+                  We bring together three specialised departments under one roof, each uniquely designed to meet
+                  the diverse developmental needs of young children. Our approach is rooted in the belief that every
+                  child is unique — and that they deserve an environment that honours that uniqueness.
+               </p>
+               <p>
+                  Whether through play-based exploration, structured classroom learning, or individualised therapy,
+                  we meet each child exactly where they are — and walk with them toward their fullest potential.
+                  At Global Kids Campus, we don't just prepare children for the next grade.
+                  <strong>We prepare them for life.</strong>
+               </p>
+
+               <!-- Department chips -->
+               <div class="mt-4">
+                  <a href="daycare.html" class="dept-chip" style="background:#f11a49;" aria-label="Daycare Department">
+                     <i class="fa fa-baby" aria-hidden="true"></i> Montessori Daycare
+                  </a>
+                  <a href="preschool.html" class="dept-chip" style="background:#9c27b0;"
+                     aria-label="Preschool Department">
+                     <i class="fa fa-book-open" aria-hidden="true"></i> Montessori Preschool
+                  </a>
+                  <a href="therapy.html" class="dept-chip" style="background:#009688;" aria-label="Therapy Centre">
+                     <i class="fa fa-heartbeat" aria-hidden="true"></i> Therapy Centre
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- ══════════════════════════════════════════════════════════════
+        SECTION 2A — MISSION / VISION / PHILOSOPHY (badge style)
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="about-section" style="background:#f8f9fb;">
+      <div class="container">
+
+
+
+         <div class="row g-4 justify-content-center align-items-stretch">
+
+            <!-- MISSION -->
+            <div class="col-lg-4 col-md-6">
+               <div class="kc-premium-card" style="--pc:#f11a49;">
+                  <div class="pc-watermark"><i class="fa fa-bullseye" aria-hidden="true"></i></div>
+                  <div class="pc-icon-wrap">
+                     <i class="fa fa-bullseye" aria-hidden="true"></i>
+                  </div>
+                  <div class="pc-content">
+                     <span class="pc-num">01</span>
+                     <h4 class="pc-title">Our Mission</h4>
+                     <p class="pc-desc">To create a safe, nurturing, and vibrant haven where authentic Montessori education seamlessly blends with specialized therapeutic support. We are dedicated to guiding each child with compassion, cultivating their independence, and igniting a lifelong love of learning through hands-on, personalized experiences.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- VISION -->
+            <div class="col-lg-4 col-md-6">
+               <div class="kc-premium-card" style="--pc:#9c27b0;">
+                  <div class="pc-watermark"><i class="fa fa-eye" aria-hidden="true"></i></div>
+                  <div class="pc-icon-wrap">
+                     <i class="fa fa-eye" aria-hidden="true"></i>
+                  </div>
+                  <div class="pc-content">
+                     <span class="pc-num">02</span>
+                     <h4 class="pc-title">Our Vision</h4>
+                     <p class="pc-desc">To foster a world where every child's unique potential is unlocked. We envision an inclusive, joy-filled environment that champions early childhood development, ensuring that all children—regardless of their abilities—are empowered to discover their passions, embrace their individuality, and thrive with confidence.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- PHILOSOPHY -->
+            <div class="col-lg-4 col-md-6">
+               <div class="kc-premium-card" style="--pc:#009688;">
+                  <div class="pc-watermark"><i class="fa fa-seedling" aria-hidden="true"></i></div>
+                  <div class="pc-icon-wrap">
+                     <i class="fa fa-seedling" aria-hidden="true"></i>
+                  </div>
+                  <div class="pc-content">
+                     <span class="pc-num">03</span>
+                     <h4 class="pc-title">Our Philosophy</h4>
+                     <p class="pc-desc">We believe that childhood is a beautiful journey, not a race. Every child is inherently capable, curious, and brimming with potential. Grounded in Montessori principles, our philosophy honors the uniqueness of each child, providing them the freedom to explore, create, and flourish at their own perfect pace.</p>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   
+   <!-- ══════════════════════════════════════════════════════════════
+        SECTION 3 — PHOTO BANNER (kidscholl style)
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="gkc-photo-banner">
+      <div class="container">
+         <div class="d-flex align-items-end justify-content-between flex-wrap gap-4">
+
+            <!-- Left: heading + buttons -->
+            <div>
+               <h2 class="gkc-photo-banner__heading">
+                  Childhood is not a race —<br>it is a journey.
+               </h2>
+               <div class="d-flex align-items-center gap-4 flex-wrap">
+                  <a href="daycare.html" class="kc-explore-btn">
+                     Explore Programs <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                  <div class="d-flex align-items-center gap-2">
+                     <i class="fa fa-phone-alt" style="color:#fff; font-size:1.1rem;" aria-hidden="true"></i>
+                     <div>
+                        <span class="gkc-banner-phone">Call Us</span>
+                        <a href="tel:+923001234567" class="gkc-banner-phone-num">+92 300 000 0000</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <!-- Wave divider at bottom of banner -->
+      <div class="banner-wave" aria-hidden="true">
+         <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1380,30 1440,40 L1440,70 L0,70 Z" fill="#ffffff"/>
+         </svg>
+      </div>
+   </section>
+
+   <!-- ══════════════════════════════════════════════════════════════
+        SECTION 2B — OUR VALUES (feature + image)
+   ══════════════════════════════════════════════════════════════ -->
+   <section class="about-section" style="background:#fff;">
+      <div class="container">
+
+         <div class="mb-4">
+            <h2 class="kc-section-heading">We nurture every child with<br>care, purpose &amp; love</h2>
+         </div>
+
+         <div class="row g-4 align-items-stretch">
+
+            <!-- LEFT values -->
+            <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-center">
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#f11a49;"><i class="fa fa-user-check" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Understood, Not Compared</h5>
+                  </div>
+                  <p class="kc-feature-desc">Every child blossoms at their own pace. We honor individual milestones and celebrate unique strengths, fostering a deep sense of self-worth without the pressure of comparison.</p>
+               </div>
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#9c27b0;"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Learning Happens Everywhere</h5>
+                  </div>
+                  <p class="kc-feature-desc">From structured classroom activities to joyful outdoor play, we transform every interaction into a meaningful opportunity for discovery, curiosity, and boundless learning.</p>
+               </div>
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#2196f3;"><i class="fa fa-shield-heart" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Emotional Security First</h5>
+                  </div>
+                  <p class="kc-feature-desc">A child who feels truly seen and valued is a child ready to conquer the world. We prioritize emotional wellbeing as the fundamental building block for all academic and personal growth.</p>
+               </div>
+
+            </div>
+
+            <!-- CENTER photo -->
+            <div class="col-lg-4 col-md-12">
+               <div class="kc-center-img" style="background:linear-gradient(160deg,#fff5f7 0%,#fde8ef 100%); overflow:hidden; border-radius:24px;">
+                  <img src="img/about-nurture-baby.png" alt="Happy baby sitting at Global Kids Campus — nurturing every child with care, purpose and love" loading="lazy" style="object-fit:contain; object-position:center bottom; padding:0 12px;">
+                  <div class="kc-stat-badge" style="border-radius:0 0 16px 16px;">
+                     <span class="kc-stat-num">8+</span>
+                     <span class="kc-stat-label">Years of Excellence<br>in Early Education</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- RIGHT values -->
+            <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-center">
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#ff8c00;"><i class="fa fa-handshake" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Families Are Partners</h5>
+                  </div>
+                  <p class="kc-feature-desc">We believe education is a collaborative journey. Through transparent communication and shared goals, we build a powerful partnership with parents to ensure every child thrives.</p>
+               </div>
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#009688;"><i class="fa fa-hands-holding-child" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Inclusion Matters</h5>
+                  </div>
+                  <p class="kc-feature-desc">Diversity is our strength. We provide an exceptionally welcoming environment where children of all abilities are embraced, supported, and given the exact tools they need to succeed.</p>
+               </div>
+
+               <div class="kc-feature-item">
+                  <div class="kc-feature-header">
+                     <div class="kc-icon-wrap" style="--fc:#f11a49;"><i class="fa fa-star" aria-hidden="true"></i></div>
+                     <h5 class="kc-feature-title">Excellence in Every Detail</h5>
+                  </div>
+                  <p class="kc-feature-desc">From thoughtfully curated Montessori materials to our expertly trained staff, every aspect of our campus is intentionally designed to offer your child a premium, world-class early education.</p>
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+   </section>
+
+
+
+   <!-- Footer divider -->
+   <div id="footer-divider" class="container-fluid cloud-divider white">
+      <svg id="deco-clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100"
+         viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+         <path d="M-5 100 Q 0 20 5 100 Z M0 100 Q 5 0 10 100 M5 100 Q 10 30 15 100 M10 100 Q 15 10 20 100
+               M15 100 Q 20 30 25 100 M20 100 Q 25 -10 30 100 M25 100 Q 30 10 35 100 M30 100 Q 35 30 40 100
+               M35 100 Q 40 10 45 100 M40 100 Q 45 50 50 100 M45 100 Q 50 20 55 100 M50 100 Q 55 40 60 100
+               M55 100 Q 60 60 65 100 M60 100 Q 65 50 70 100 M65 100 Q 70 20 75 100 M70 100 Q 75 45 80 100
+               M75 100 Q 80 30 85 100 M80 100 Q 85 20 90 100 M85 100 Q 90 50 95 100
+               M90 100 Q 95 25 100 100 M95 100 Q 100 15 105 100 Z">
+         </path>
+      </svg>
+   </div>
+
+   <div id="footer-placeholder"></div>
+
+   <!-- Scripts -->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/plugins.js"></script>
+
+</body>
+
+</html>
