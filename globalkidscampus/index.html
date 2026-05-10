@@ -162,7 +162,7 @@
          .p-5 {
             padding: 1.5rem !important;
          }
-         
+
          .ps-lg-5 {
             padding-left: 10px !important;
          }
@@ -181,7 +181,7 @@
          #lightbox .portfolio-item {
             margin-bottom: 20px;
          }
-         
+
          .gallery-thumb {
             width: 85% !important;
             height: auto !important;
@@ -371,8 +371,7 @@
                   <!-- Image -->
                   <img src="img/gkc-16.jpg"
                      alt="Young boy happily engaged in Montessori learning activity at Global Kids Campus Lahore — nurturing early childhood development through play-based education"
-                     class="img-fluid mx-auto d-block"
-                     style="border-radius: 20px;">
+                     class="img-fluid mx-auto d-block" style="border-radius: 20px;">
                </div>
                <!-- /col-md-12-->
             </div>
@@ -1038,28 +1037,36 @@
                   <!-- testimonial 1-->
                   <div class="testimonial-item mb-5 pb-4 border-bottom">
                      <blockquote class="quote-test text-center">
-                        <p class="mb-4">"Global Kids Campus is an absolute blessing! The teachers are incredibly caring and my son
-                           comes home every day excited to tell me about the new things he's learned. The facility is spotless
+                        <p class="mb-4">"Global Kids Campus is an absolute blessing! The teachers are incredibly caring
+                           and my son
+                           comes home every day excited to tell me about the new things he's learned. The facility is
+                           spotless
                            and safe, and I couldn't be happier."</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Sarah Jenkins, Parent</small>
+                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Sarah Jenkins,
+                           Parent</small>
                      </blockquote>
                   </div>
                   <!-- testimonial 2-->
                   <div class="testimonial-item mb-5 pb-4 border-bottom">
                      <blockquote class="quote-test text-center">
-                        <p class="mb-4">"Enrolling our daughter here was the best decision we made. The curriculum is perfectly
-                           balanced between playful activities and early learning. We've seen a massive improvement in her social
+                        <p class="mb-4">"Enrolling our daughter here was the best decision we made. The curriculum is
+                           perfectly
+                           balanced between playful activities and early learning. We've seen a massive improvement in
+                           her social
                            skills and confidence. Highly recommend!"</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>David Gomez, Parent</small>
+                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>David Gomez,
+                           Parent</small>
                      </blockquote>
                   </div>
                   <!-- testimonial 3-->
                   <div class="testimonial-item mb-5">
                      <blockquote class="quote-test text-center">
-                        <p class="mb-4">"We love Global Kids Campus! The staff genuinely cares about each child's individual
+                        <p class="mb-4">"We love Global Kids Campus! The staff genuinely cares about each child's
+                           individual
                            development. The playground and art programs are fantastic, and we always feel like we're
                            part of a wonderful, supportive community."</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Michael Rossi, Parent</small>
+                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Michael Rossi,
+                           Parent</small>
                      </blockquote>
                   </div>
                </div>
@@ -1151,7 +1158,8 @@
                   position: relative;
                   border: 8px solid #f11a49;
                   transition: transform 0.3s ease;
-                  width: 280px; /* Base size */
+                  width: 280px;
+                  /* Base size */
                   height: 280px;
                }
 
@@ -1159,46 +1167,11 @@
                   transform: scale(1.05);
                }
 
-               /* Hover Color Fix (Red/Pink instead of Blue) */
-               .portfolio-item:hover .overlay-mask {
-                  background: rgba(241, 26, 73, 0.6) !important;
-                  border-radius: 50% !important;
-               }
-
-               .portfolio-item .link.centered {
-                  background: #f11a49 !important; /* Making the icon button red */
-                  border-color: #f11a49 !important;
-                  box-shadow: none !important;
-               }
-
-               .portfolio-item:hover .link.centered {
-                  background: #d1123d !important; /* Slightly darker on hover */
-                  box-shadow: none !important;
-               }
-
-               /* Removing any global blue borders/shadows from the theme */
-               .portfolio-item, .gallery-thumb, .portfolio-item:hover, .gallery-thumb:hover {
-                  border-color: #f11a49 !important;
-                  box-shadow: none !important;
-                  outline: none !important;
-               }
-
                @media (max-width: 768px) {
-                  #lightbox [class*="col-"] {
-                     position: relative !important;
-                     left: auto !important;
-                     top: auto !important;
-                     width: 100% !important;
-                     display: flex !important;
-                     justify-content: center !important;
-                     margin-bottom: 30px !important;
-                  }
-
                   .gallery-thumb {
-                     width: 300px !important;
-                     height: 300px !important;
-                     border-width: 8px !important;
-                     margin: 0 auto !important;
+                     width: 220px !important;
+                     height: 220px !important;
+                     border-width: 6px !important;
                   }
                }
             </style>
@@ -1478,8 +1451,8 @@
       });
 
       // Gallery Isotope Mobile Fix
-      $(window).on('load', function() {
-         setTimeout(function() {
+      $(window).on('load', function () {
+         setTimeout(function () {
             if ($.fn.isotope) {
                $('#lightbox').isotope('layout');
             }
