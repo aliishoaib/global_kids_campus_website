@@ -1142,9 +1142,11 @@
          </svg>
          <div class="container">
             <!-- Section heading -->
-            <div class="section-heading">
-               <h2>Our Gallery</h2>
-            </div>
+             <div class="section-heading">
+                <a href="our-gallery.html" style="text-decoration: none !important; display: inline-block;">
+                   <h2>Our Gallery</h2>
+                </a>
+             </div>
 
             <style>
                .gallery-thumb {
@@ -1167,14 +1169,32 @@
                   transform: scale(1.05);
                }
 
-               @media (max-width: 768px) {
-                  .gallery-thumb {
-                     width: 220px !important;
-                     height: 220px !important;
-                     border-width: 6px !important;
-                  }
-               }
-            </style>
+                @media (max-width: 768px) {
+                   .gallery-thumb {
+                      width: 250px !important;
+                      height: 250px !important;
+                      border-width: 6px !important;
+                   }
+                   
+                   /* Slick Slider dots styling for gallery */
+                   #lightbox.slick-initialized .slick-dots {
+                      bottom: -40px;
+                   }
+                   #lightbox.slick-initialized .slick-dots li button:before {
+                      font-size: 12px;
+                      color: #f11a49;
+                      opacity: 0.3;
+                   }
+                   #lightbox.slick-initialized .slick-dots li.slick-active button:before {
+                      opacity: 1;
+                      color: #f11a49;
+                   }
+                   #lightbox .portfolio-item {
+                      margin-bottom: 0 !important;
+                      padding: 10px;
+                   }
+                }
+             </style>
 
             <!-- Gallery -->
             <div class="row">
@@ -1276,9 +1296,9 @@
                <!-- View More Button -->
                <div class="row mt-5">
                   <div class="col-12 text-center">
-                     <a href="our-gallery.html" class="btn btn-primary btn-lg"
-                        style="background-color: #f11a49; border-color: #f11a49; padding: 12px 30px; font-weight: bold; border-radius: 30px;">View
-                        More Photos</a>
+                     <div class="page-scroll">
+                        <a href="our-gallery.html" class="btn">View More Photos</a>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1450,13 +1470,57 @@
          once: true
       });
 
-      // Gallery Isotope Mobile Fix
-      $(window).on('load', function () {
-         setTimeout(function () {
-            if ($.fn.isotope) {
-               $('#lightbox').isotope('layout');
+      // Gallery Isotope Mobile Fix & Slider Toggle
+      function handleGalleryLayout() {
+         var $gallery = $('#lightbox');
+         if ($(window).width() < 768) {
+            if (!$gallery.hasClass('slick-initialized')) {
+               // Destroy isotope if active
+               if ($.fn.isotope && $gallery.data('isotope')) {
+                  $gallery.isotope('destroy');
+               }
+               
+               // Force column styles for Slick
+               $gallery.find('[class*="col-"]').css({
+                  'position': 'relative',
+                  'left': 'auto',
+                  'top': 'auto',
+                  'width': '100%',
+                  'display': 'block'
+               });
+
+               $gallery.slick({
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  centerMode: true,
+                  centerPadding: '0px',
+                  dots: true,
+                  arrows: false,
+                  autoplay: true,
+                  autoplaySpeed: 3000,
+                  adaptiveHeight: true
+               });
             }
-         }, 500);
+         } else {
+            if ($gallery.hasClass('slick-initialized')) {
+               $gallery.slick('unslick');
+               $gallery.find('[class*="col-"]').attr('style', '');
+               if ($.fn.isotope) {
+                  $gallery.isotope({
+                     itemSelector: '[class*="col-"]',
+                     layoutMode: 'fitRows'
+                  });
+               }
+            } else {
+               if ($.fn.isotope) {
+                  $gallery.isotope('layout');
+               }
+            }
+         }
+      }
+
+      $(window).on('load resize', function() {
+         setTimeout(handleGalleryLayout, 300);
       });
    </script>
 </body>
