@@ -3754,8 +3754,6 @@ textarea.form-control:focus {
 
     .navbar-brand-small img {
         max-height: 100px !important;
-        border-radius: 50%;
-        /* Make sure the white background stays circular */
     }
 
     .navbar>.container>.justify-content-lg-end {
