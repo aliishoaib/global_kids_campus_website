@@ -1658,6 +1658,35 @@ footer table>tbody>tr>td {
     line-height: 2em;
 }
 
+/* Quick Links in footer */
+.footer-quick-links {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-quick-links li {
+    margin-bottom: 6px;
+}
+
+.footer-quick-links a {
+    color: rgba(255, 255, 255, 0.82);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    transition: color 0.25s ease, letter-spacing 0.25s ease;
+    display: inline-block;
+}
+
+.footer-quick-links a:hover {
+    color: #ff6fb0;
+    letter-spacing: 0.5px;
+}
+
+.footer-quick-links a i {
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
 footer img {
     max-width: 130px;
 }
