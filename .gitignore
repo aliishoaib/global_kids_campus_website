@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code local settings (contains private machine paths)
+.claude/
+
+# Playwright MCP (development tool logs & snapshots)
+.playwright-mcp/
+
+# Development/testing screenshots
+about-section.png
+mobile-nav-before-open.png
+mobile-nav-open.png
+mobile-programs-open.png
+
+# Logs
+*.log
+
+# Environment & secrets
+.env
+.env.*
+*.pem
+*.key
