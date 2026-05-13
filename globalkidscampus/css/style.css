@@ -3507,6 +3507,17 @@ textarea.form-control:focus {
         top: 6rem;
     }
 
+    /* Reduce section gaps */
+    section .container,
+    section .container-fluid {
+        padding-top: 25px !important;
+        padding-bottom: 25px !important;
+    }
+
+    .small-section .container {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
 }
 
 /************ max width 480px *************/
@@ -3750,10 +3761,21 @@ textarea.form-control:focus {
         transform: translateX(-50%);
         top: 5px;
         z-index: 1050;
+        background: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 85px;
+        height: 85px;
     }
 
     .navbar-brand-small img {
-        max-height: 100px !important;
+        max-height: 70px !important;
+        width: auto !important;
+        object-fit: contain;
     }
 
     .navbar>.container>.justify-content-lg-end {
