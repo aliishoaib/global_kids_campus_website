@@ -6,10 +6,11 @@
 			$('#layerslider').layerSlider({
 				sliderVersion: '6.0.0',
 				skin: 'fullwidth',
-				type: 'responsive', 
+				type: 'responsive',
                 globalBGSize:'cover',
 			    hoverPrevNext:false,
-				skinsPath: './layerslider/skins/'
+				skinsPath: './layerslider/skins/',
+				minHeight: 350
 			});
 			
 			
