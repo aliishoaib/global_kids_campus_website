@@ -81,6 +81,7 @@
    <link href="css/style.css" rel="stylesheet">
    <link href="styles/maincolors.css" rel="stylesheet">
    <link href="css/plugins.css" rel="stylesheet">
+   <link href="css/owl.css" rel="stylesheet">
    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link href="layerslider/css/layerslider.css" rel="stylesheet">
 
@@ -122,28 +123,47 @@
             margin-bottom: 20px;
          }
 
-         /* Hero Text Mobile Fit */
+         /* Hero Text Mobile Fit - Hidden on mobile */
+         .ls-hide-phone,
+         .ls-hide-tablet {
+            display: none !important;
+         }
+
          #layerslider .header-text {
+            padding: 12px 15px !important;
             width: 85% !important;
-            margin-left: 5% !important;
-            padding: 6px 8px !important;
+            margin-left: 7.5% !important;
+            background: rgba(255, 255, 255, 0.9) !important;
+            border-radius: 15px !important;
+            border: 1px solid rgba(232, 57, 74, 0.15) !important;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
          }
 
          #layerslider .header-text h1 {
-            font-size: 15px !important;
-            margin-bottom: 2px !important;
-            line-height: 1.1 !important;
-         }
-
-         #layerslider .header-text .subtitle {
-            font-size: 11px !important;
-            margin-bottom: 4px !important;
+            font-size: 18px !important;
+            margin-bottom: 5px !important;
             line-height: 1.2 !important;
          }
 
+         #layerslider .header-text h1 span {
+            font-size: 18px !important;
+            line-height: 1.2 !important;
+         }
+
+         #layerslider .header-text .subtitle {
+            font-size: 13px !important;
+            margin-bottom: 10px !important;
+            line-height: 1.4 !important;
+            color: #555 !important;
+         }
+
          #layerslider .header-text .btn {
-            padding: 4px 12px !important;
-            font-size: 11px !important;
+            padding: 6px 18px !important;
+            font-size: 12px !important;
+            margin-top: 5px !important;
+            border-radius: 25px !important;
+            text-transform: uppercase !important;
+            font-weight: 700 !important;
          }
 
          /* Adjusting section headings for mobile */
@@ -187,6 +207,8 @@
             height: auto !important;
             aspect-ratio: 1 !important;
          }
+
+
       }
    </style>
 </head>
@@ -283,8 +305,8 @@
                alt="" data-ls="delayin:1000;easingin:easeOutExpo;parallaxlevel:7;">
             <!-- Text -->
             <div class="ls-l" style="top:200px;margin-left:4%;width:90%;"
-               data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutExpo;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;">
-               <div class="header-text col-lg-5 col-xl-5">
+               data-ls="offsetxin:0;durationin:2000;delayin:1500;easingin:easeOutExpo;rotatexin:-90;transformoriginin:50% top 0;offsetxout:-200;durationout:1000;parallaxlevel:2;hideunder:768;">
+               <div class="header-text col-lg-5 col-xl-5 d-none d-md-block">
                   <h1><span style="font-weight: 500; color: #1a6b6b !important; display: block;">Welcome to</span> <span
                         style="font-weight: 800; color: #e8394a !important; white-space: nowrap; font-size: clamp(16px, 5vw, 58px);">Global
                         Kids Campus</span></h1>
@@ -1028,53 +1050,241 @@
       <!-- /Our Features -->
 
       <!-- Section Testimonials -->
-      <section id="testimonials" class="pt-5 pb-5">
-         <div class="container">
-            <!-- /row features -->
-            <div class="col-lg-12 col-sm-12 paper_block mt-5">
-               <h3 class="text-center mb-5">What Parents Think</h3>
-               <div class="testimonials-vertical-list">
-                  <!-- testimonial 1-->
-                  <div class="testimonial-item mb-5 pb-4 border-bottom">
-                     <blockquote class="quote-test text-center">
-                        <p class="mb-4">"Global Kids Campus is an absolute blessing! The teachers are incredibly caring
-                           and my son
-                           comes home every day excited to tell me about the new things he's learned. The facility is
-                           spotless
-                           and safe, and I couldn't be happier."</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Sarah Jenkins,
-                           Parent</small>
-                     </blockquote>
-                  </div>
-                  <!-- testimonial 2-->
-                  <div class="testimonial-item mb-5 pb-4 border-bottom">
-                     <blockquote class="quote-test text-center">
-                        <p class="mb-4">"Enrolling our daughter here was the best decision we made. The curriculum is
-                           perfectly
-                           balanced between playful activities and early learning. We've seen a massive improvement in
-                           her social
-                           skills and confidence. Highly recommend!"</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>David Gomez,
-                           Parent</small>
-                     </blockquote>
-                  </div>
-                  <!-- testimonial 3-->
-                  <div class="testimonial-item mb-5">
-                     <blockquote class="quote-test text-center">
-                        <p class="mb-4">"We love Global Kids Campus! The staff genuinely cares about each child's
-                           individual
-                           development. The playground and art programs are fantastic, and we always feel like we're
-                           part of a wonderful, supportive community."</p>
-                        <small class="fw-bold" style="color: #f11a49;"><i class="fa fa-user me-2"></i>Michael Rossi,
-                           Parent</small>
-                     </blockquote>
-                  </div>
+      <style>
+         @keyframes float-bob-y {
+            0%   { transform: translateY(-15px); }
+            50%  { transform: translateY(-5px);  }
+            100% { transform: translateY(-15px); }
+         }
+         .float-bob-y {
+            animation: float-bob-y 2.5s ease-in-out infinite;
+         }
+
+         #testimonials {
+            background: #f0f0f0;
+            padding: 60px 0;
+            position: relative;
+            overflow: hidden;
+         }
+
+         /* Big oval/blob background */
+         .test-oval-bg {
+            background: #e8394a;
+            border-radius: 300px;
+            padding: 60px 80px;
+            position: relative;
+         }
+
+         #testimonials .test-sec-title span {
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.85);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 8px;
+         }
+         #testimonials .test-sec-title h2 {
+            font-size: clamp(24px, 3vw, 38px);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 30px;
+         }
+
+         /* Testimonial card — darker so it pops on the red oval */
+         .gkc-testimonial-block .inner-box {
+            position: relative;
+            background: rgba(0,0,0,0.18);
+            border-radius: 20px;
+            padding: 38px 30px 38px 55px;
+            margin-bottom: 16px;
+         }
+         .gkc-testimonial-block .inner-box::before {
+            position: absolute;
+            content: '';
+            background: rgba(0,0,0,0.18);
+            width: 26px;
+            height: 26px;
+            border-radius: 4px;
+            left: 50%;
+            margin-left: -13px;
+            bottom: -8px;
+            transform: rotate(-45deg);
+         }
+         .gkc-testimonial-block .inner-box .quote-icon {
+            position: absolute;
+            font-size: 55px;
+            line-height: 1;
+            color: rgba(255,255,255,0.15);
+            left: 18px;
+            top: 24px;
+            font-family: Georgia, serif;
+         }
+         .gkc-testimonial-block .inner-box .rating {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px;
+         }
+         .gkc-testimonial-block .inner-box .rating li {
+            display: inline-block;
+            color: #ffc107;
+            font-size: 15px;
+         }
+         .gkc-testimonial-block .inner-box .text {
+            font-size: 15px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.95);
+            font-weight: 600;
+         }
+         .gkc-testimonial-block .inner-box .author-name {
+            display: block;
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 8px;
+         }
+         .gkc-testimonial-block .inner-box .author-name span {
+            font-size: 13px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.75);
+         }
+
+         /* Hide owl nav buttons/text */
+         #testimonials .owl-nav { display: none !important; }
+         /* Dots below testimonial carousel */
+         .client-testimonial-carousel .owl-dots { text-align: center; margin-top: 16px; }
+         .client-testimonial-carousel .owl-dot span {
+            width: 10px; height: 10px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 4px;
+            transition: background 0.3s;
+         }
+         .client-testimonial-carousel .owl-dot.active span { background: #fff; }
+
+         /* Thumb carousel — one centered avatar */
+         .client-thumb-outer {
+            padding-top: 22px;
+            text-align: center;
+         }
+         .client-thumbs-carousel .owl-stage-outer { overflow: hidden; }
+         .client-thumbs-carousel .thumb-item {
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+         }
+         .client-thumbs-carousel .thumb-box {
+            width: 95px; height: 95px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 4px solid #e8394a;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            margin: 0 auto;
+            transition: transform 0.3s;
+         }
+         .client-thumbs-carousel .thumb-box:hover { transform: scale(1.05); }
+         .client-thumbs-carousel .thumb-box img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+         }
+         .client-thumbs-carousel .owl-dots { text-align: center; margin-top: 14px; }
+         .client-thumbs-carousel .owl-dot span {
+            width: 10px; height: 10px;
+            background: #ccc;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 4px;
+            transition: background 0.3s;
+         }
+         .client-thumbs-carousel .owl-dot.active span { background: #e8394a; }
+
+         /* Mobile */
+         @media (max-width: 991px) {
+            #testimonials { padding: 30px 0; }
+            #testimonials .test-child-col { display: none; }
+            .test-oval-bg { border-radius: 40px; padding: 40px 25px; }
+            .client-thumb-outer { max-width: 100%; }
+         }
+      </style>
+      <section id="testimonials">
+         <!-- Floating stickers (xxl screens only) -->
+         <img src="img/testimonial-balloon.png" alt="" class="float-bob-y d-none d-xxl-block"
+            style="position:absolute;top:20px;left:90px;width:110px;pointer-events:none;z-index:3;">
+         <img src="img/testimonial-star-deco.png" alt="" class="float-bob-y d-none d-xxl-block"
+            style="position:absolute;top:40px;right:130px;width:110px;pointer-events:none;z-index:3;animation-delay:0.6s;">
+         <img src="img/testimonial-pencil.png" alt="" class="float-bob-y d-none d-xxl-block"
+            style="position:absolute;bottom:30px;right:70px;width:100px;pointer-events:none;z-index:3;animation-delay:1s;">
+         <img src="img/testimonial-rocket.png" alt="" class="float-bob-y d-none d-xxl-block"
+            style="position:absolute;top:50%;left:20px;transform:translateY(-50%);width:110px;pointer-events:none;z-index:3;animation-delay:0.3s;">
+
+         <div class="container-fluid px-3 px-lg-5">
+            <div class="test-oval-bg">
+            <div class="row align-items-center">
+
+               <!-- Left: child image -->
+               <div class="col-lg-5 test-child-col text-center" data-aos="zoom-in" data-aos-duration="1000">
+                  <img src="img/gkc-children-puppet-show-creative-activity.jpg"
+                     alt="Children performing a creative puppet show activity at Global Kids Campus Montessori Lahore — fostering imagination, language skills and teamwork through play-based learning"
+                     class="img-fluid" style="max-height:440px;border-radius:20px;">
                </div>
-               <!--/testimonials-vertical-list-->
+
+               <!-- Right: testimonials -->
+               <div class="col-lg-7 mt-4 mt-lg-0">
+                  <div class="test-sec-title" data-aos="fade-up" data-aos-duration="800">
+                     <span>Our Testimonials</span>
+                     <h2>What Our Parents Say<br>About Global Kids Campus</h2>
+                  </div>
+
+                  <!-- Main testimonial Owl Carousel -->
+                  <div class="client-testimonial-carousel owl-carousel owl-theme">
+                     <!-- Slide 1 -->
+                     <div class="gkc-testimonial-block">
+                        <div class="inner-box">
+                           <span class="quote-icon">"</span>
+                           <ul class="rating">
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                           </ul>
+                           <div class="text">Global Kids Campus is an absolute blessing! The teachers are incredibly caring and my son comes home every day excited to tell me about the new things he's learned. The facility is spotless and safe.</div>
+                           <strong class="author-name">Sarah Jenkins <span>/ Student Mother</span></strong>
+                        </div>
+                     </div>
+                     <!-- Slide 2 -->
+                     <div class="gkc-testimonial-block">
+                        <div class="inner-box">
+                           <span class="quote-icon">"</span>
+                           <ul class="rating">
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                           </ul>
+                           <div class="text">Enrolling our daughter here was the best decision we made. The curriculum is perfectly balanced between playful activities and early learning. We've seen a massive improvement in her confidence!</div>
+                           <strong class="author-name">David Gomez <span>/ Student Father</span></strong>
+                        </div>
+                     </div>
+                     <!-- Slide 3 -->
+                     <div class="gkc-testimonial-block">
+                        <div class="inner-box">
+                           <span class="quote-icon">"</span>
+                           <ul class="rating">
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li><li><i class="fas fa-star"></i></li>
+                              <li><i class="fas fa-star"></i></li>
+                           </ul>
+                           <div class="text">We love Global Kids Campus! The staff genuinely cares about each child's individual development. The playground and art programs are fantastic — we always feel part of a wonderful community.</div>
+                           <strong class="author-name">Michael Rossi <span>/ Student Father</span></strong>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+
             </div>
-            <!-- /col-lg- -->
+            </div><!-- /.test-oval-bg -->
          </div>
-         <!--/container-->
       </section>
       <!--/ Section Testimonials ends -->
       <!-- Section Counter -->
@@ -1131,7 +1341,7 @@
       <div class="parallax-object2 d-none d-lg-block" data-0="opacity:1;" data-start="margin-top:40%"
          data-100="transform:translatey(0%);" data-center-bottom="transform:translatey(-220%);">
          <!-- Image -->
-         <img src="img/parallaxobject2.png" alt="">
+         <img src="img/parallaxobject2.png" alt="" class="float-bob-y">
       </div>
       <!-- Section Gallery -->
       <section id="gallery" class="color-section">
@@ -1142,11 +1352,11 @@
          </svg>
          <div class="container">
             <!-- Section heading -->
-             <div class="section-heading">
-                <a href="our-gallery.html" style="text-decoration: none !important; display: inline-block;">
-                   <h2>Our Gallery</h2>
-                </a>
-             </div>
+            <div class="section-heading">
+               <a href="our-gallery.html" style="text-decoration: none !important; display: inline-block;">
+                  <h2>Our Gallery</h2>
+               </a>
+            </div>
 
             <style>
                .gallery-thumb {
@@ -1169,32 +1379,35 @@
                   transform: scale(1.05);
                }
 
-                @media (max-width: 768px) {
-                   .gallery-thumb {
-                      width: 250px !important;
-                      height: 250px !important;
-                      border-width: 6px !important;
-                   }
-                   
-                   /* Slick Slider dots styling for gallery */
-                   #lightbox.slick-initialized .slick-dots {
-                      bottom: -40px;
-                   }
-                   #lightbox.slick-initialized .slick-dots li button:before {
-                      font-size: 12px;
-                      color: #f11a49;
-                      opacity: 0.3;
-                   }
-                   #lightbox.slick-initialized .slick-dots li.slick-active button:before {
-                      opacity: 1;
-                      color: #f11a49;
-                   }
-                   #lightbox .portfolio-item {
-                      margin-bottom: 0 !important;
-                      padding: 10px;
-                   }
-                }
-             </style>
+               @media (max-width: 768px) {
+                  .gallery-thumb {
+                     width: 250px !important;
+                     height: 250px !important;
+                     border-width: 6px !important;
+                  }
+
+                  /* Slick Slider dots styling for gallery */
+                  #lightbox.slick-initialized .slick-dots {
+                     bottom: -40px;
+                  }
+
+                  #lightbox.slick-initialized .slick-dots li button:before {
+                     font-size: 12px;
+                     color: #f11a49;
+                     opacity: 0.3;
+                  }
+
+                  #lightbox.slick-initialized .slick-dots li.slick-active button:before {
+                     opacity: 1;
+                     color: #f11a49;
+                  }
+
+                  #lightbox .portfolio-item {
+                     margin-bottom: 0 !important;
+                     padding: 10px;
+                  }
+               }
+            </style>
 
             <!-- Gallery -->
             <div class="row">
@@ -1463,6 +1676,19 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <!-- number counter script -->
    <script src="js/counter.js"></script>
+   <script src="js/owl.js"></script>
+   <script>
+      // Testimonials — Owl Carousel
+      if ($('.client-testimonial-carousel').length) {
+         $('.client-testimonial-carousel').owlCarousel({
+            loop: true, items: 1, margin: 0,
+            nav: false, dots: true,
+            autoplay: true, autoplayTimeout: 5000,
+            smartSpeed: 700,
+            slideTransition: 'ease-in-out'
+         });
+      }
+   </script>
    <script>
       AOS.init({
          duration: 800,
@@ -1479,7 +1705,7 @@
                if ($.fn.isotope && $gallery.data('isotope')) {
                   $gallery.isotope('destroy');
                }
-               
+
                // Force column styles for Slick
                $gallery.find('[class*="col-"]').css({
                   'position': 'relative',
@@ -1519,7 +1745,7 @@
          }
       }
 
-      $(window).on('load resize', function() {
+      $(window).on('load resize', function () {
          setTimeout(handleGalleryLayout, 300);
       });
    </script>
